@@ -19,9 +19,8 @@ if [ "$HOSTNAME" != "nixos" ]; then
     exit 1
 fi
 
-sudo -i
-parted $DISK -- mklabel gpt
-parted $DISK -- mkpart primary 512MiB -8GiB
-parted $DISK -- mkpart primary linux-swap -8GiB 100%
-parted $DISK -- mkpart ESP fat32 1MiB 512MiB
-parted $DISK -- set 3 esp on
+sudo parted $DISK -- mklabel gpt
+sudo parted $DISK -- mkpart primary 512MiB -8GiB
+sudo parted $DISK -- mkpart primary linux-swap -8GiB 100%
+sudo parted $DISK -- mkpart ESP fat32 1MiB 512MiB
+sudo parted $DISK -- set 3 esp on
