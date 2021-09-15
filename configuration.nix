@@ -11,13 +11,14 @@
     ];
 
   # Use the GRUB 2 boot loader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.version = 2;
-  boot.loader.grub.efiSupport = true;
-  # boot.loader.grub.efiInstallAsRemovable = true;
-  boot.loader.efi.efiSysMountPoint = "/boot/efi";
+  #boot.loader.grub.enable = true;
+  #boot.loader.grub.version = 2;
+  #boot.loader.grub.efiSupport = true;
+  #boot.loader.grub.efiInstallAsRemovable = true;
+  boot.loader.systemd-boot.enable = true;
+  #boot.loader.efi.efiSysMountPoint = "/boot/efi";
   # Define on which hard drive you want to install Grub.
-  #boot.loader.grub.device = "/dev/sda"; # or "nodev" for efi only
+  boot.loader.grub.device = "nodev"; # or "nodev" for efi only
 
   # networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -28,8 +29,9 @@
   # The global useDHCP flag is deprecated, therefore explicitly set to false here.
   # Per-interface useDHCP will be mandatory in the future, so this generated config
   # replicates the default behaviour.
-  networking.useDHCP = false;
-  networking.interfaces.enp0s3.useDHCP = true;
+  #networking.useDHCP = false;
+  #networking.interfaces.enp0s3.useDHCP = true;
+  networking.networkmanager.enable = true;
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -44,9 +46,7 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-
-
-  
+  services.xserver.windowManager.i3.enable = true;
 
   # Configure keymap in X11
   services.xserver.layout = "dvorak";
@@ -109,6 +109,7 @@
      sshfs
      syncthing
      testssl
+     tmux
      tor-browser-bundle-bin
      unzip
      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
