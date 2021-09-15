@@ -71,7 +71,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-     aws-cli
+     awscli
      chromium
      cifs-utils
      coreutils
@@ -87,6 +87,7 @@
      git-crypt
      helm
      htop
+     i3
      i3status-rust
      inetutils
      ipcalc
@@ -96,12 +97,10 @@
      mplayer
      mtr
      nmap
-     npm
-     ntfs-3g
+     ntfs3g
      openssh
      p7zip
      pwgen
-     python-pip
      rdesktop
      remmina
      rsync
@@ -109,8 +108,8 @@
      sqlmap
      sshfs
      syncthing
-     testssl.sh
-     torbrowser-launcher
+     testssl
+     tor-browser-bundle-bin
      unzip
      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
      vlc
