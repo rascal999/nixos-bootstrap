@@ -31,7 +31,7 @@ sudo cryptsetup luksOpen ${DISK}1 root
 sudo mkfs.ext4 /dev/mapper/root
 
 # Mount
-sudo mount /dev/disk/mapper/root /mnt
+sudo mount /dev/mapper/root /mnt
 sudo mkdir /mnt/boot
 sudo mount ${DISK}2 /mnt/boot
 
