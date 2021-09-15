@@ -21,15 +21,19 @@ fi
 
 # Partition
 sudo parted $DISK -- mklabel gpt
-sudo parted $DISK -- mkpart primary root 512MiB 100%
+sudo parted $DISK -- mkpart primary 512MiB 100%
 sudo parted $DISK -- mkpart ESP fat32 1MiB 512MiB
 sudo parted $DISK -- set 2 esp on
 
-# LUKS
-sudo cryptsetup luksFormat $DISK
-sudo cryptsetup luksOpen $DISK root
+# LUKS + ext4
+sudo cryptsetup luksFormat ${DISK}1
+sudo cryptsetup luksOpen ${DISK}1 root
 sudo mkfs.ext4 /dev/mapper/root
 
 # Mount
 sudo mount /dev/disk/mapper/root /mnt
 sudo mkdir /mnt/boot
+sudo mount ${DISK}2 /mnt/boot
+
+# NixOS
+sudo nixos-generate-config --root /mnt
