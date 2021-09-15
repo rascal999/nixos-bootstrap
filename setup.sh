@@ -34,6 +34,7 @@ sudo parted $DISK -- set 2 esp on
 sudo cryptsetup luksFormat ${DISK}1
 sudo cryptsetup luksOpen ${DISK}1 root
 sudo mkfs.ext4 /dev/mapper/root
+sudo mkfs.fat -F 32 -n boot ${DISK}2
 
 # Mount
 sudo mount /dev/mapper/root /mnt
