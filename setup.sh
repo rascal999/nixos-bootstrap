@@ -41,5 +41,10 @@ sudo mount /dev/mapper/root /mnt
 sudo mkdir /mnt/boot
 sudo mount ${DISK}2 /mnt/boot
 
-# NixOS
+# NixOS config
 sudo nixos-generate-config --root /mnt
+sudo cp configuration.nix /mnt/etc/nixos/configuration.nix
+
+# NixOS install
+sleep 10
+sudo nixos-install
