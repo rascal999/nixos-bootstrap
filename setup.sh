@@ -21,7 +21,7 @@ fi
 
 # Partition
 sudo parted $DISK -- mklabel gpt
-sudo parted $DISK -- mkpart primary 512MiB 100%
+sudo parted $DISK -- mkpart primary root 512MiB 100%
 sudo parted $DISK -- mkpart ESP fat32 1MiB 512MiB
 sudo parted $DISK -- set 2 esp on
 
@@ -29,3 +29,7 @@ sudo parted $DISK -- set 2 esp on
 sudo cryptsetup luksFormat $DISK
 sudo cryptsetup luksOpen $DISK root
 sudo mkfs.ext4 /dev/mapper/root
+
+# Mount
+sudo mount /dev/disk/mapper/root /mnt
+sudo mkdir /mnt/boot
