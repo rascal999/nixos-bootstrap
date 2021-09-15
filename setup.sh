@@ -2,6 +2,10 @@
 
 echo "### NixOS bootstrap script"
 
+# Just in case
+sudo umount /mnt/boot
+sudo umount /mnt/
+
 ls /dev/disk/by-id -alh
 
 echo -n "Disk? "
