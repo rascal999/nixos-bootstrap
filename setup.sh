@@ -19,8 +19,6 @@ if [ "$HOSTNAME" != "nixos" ]; then
     exit 1
 fi
 
-exit 1
-
 sudo -i
 parted $DISK -- mklabel gpt
 parted $DISK -- mkpart primary 512MiB -8GiB
