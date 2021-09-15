@@ -5,7 +5,7 @@ echo "### NixOS bootstrap script"
 # Just in case
 sudo umount /mnt/boot
 sudo umount /mnt/
-sudo luksClose root
+sudo cryptsetup luksClose root
 
 ls /dev/disk/by-id -alh
 
