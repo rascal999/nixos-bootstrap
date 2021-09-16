@@ -120,6 +120,7 @@
      x11vnc
      xlockmore
      zip
+     zsh
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
