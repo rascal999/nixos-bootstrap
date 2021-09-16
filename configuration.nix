@@ -157,7 +157,8 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
-  # Custom
+  ### Custom
+  services.ntp.enable = true;
   # For Obsidian
   nixpkgs.config.allowUnfree = true;
   # Start docker
