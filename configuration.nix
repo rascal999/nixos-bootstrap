@@ -89,6 +89,7 @@
      git-crypt
      gobuster
      helm
+     hexedit
      hping
      htop
      i3
