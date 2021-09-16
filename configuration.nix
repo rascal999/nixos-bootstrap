@@ -94,6 +94,7 @@
      i3status-rust
      inetutils
      ipcalc
+     john
      jq
      keepassxc
      kubectl
