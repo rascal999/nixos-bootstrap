@@ -89,6 +89,7 @@
      git-crypt
      gobuster
      helm
+     hping
      htop
      i3
      i3status-rust
@@ -125,6 +126,7 @@
      virtualbox
      vlc
      wafw00f
+     wapiti
      wget
      whois
      wireshark-qt
