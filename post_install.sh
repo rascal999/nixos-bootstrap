@@ -7,7 +7,7 @@ wget https://codeload.github.com/rascal999/dotfiles/tar.gz/refs/heads/master -O 
 tar --strip-components=1 -xvf $HOME/master.tar.gz -C $HOME
 
 # Clean up
-#rm $HOME/master.tar.gz
+rm $HOME/master.tar.gz
 rm $HOME/.gitignore*
 rm $HOME/README.md
 
