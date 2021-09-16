@@ -3,10 +3,10 @@
 echo "### NixOS post install script"
 
 # Pull dotfiles
-wget https://github.com/rascal999/dotfiles/archive/refs/heads/master.zip -O $HOME/master.zip
-cd $HOME/ && unzip -j -o master.zip
+wget https://codeload.github.com/rascal999/dotfiles/tar.gz/refs/heads/master -O $HOME/master.tar.gz
+tar --strip-components=1 -xvf $HOME/master.tar.gz -C $HOME
 
 # Clean up
-rm master.zip
-rm .gitignore*
-rm README.md
+#rm $HOME/master.tar.gz
+rm $HOME/.gitignore*
+rm $HOME/README.md

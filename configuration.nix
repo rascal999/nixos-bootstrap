@@ -104,6 +104,7 @@
      rdesktop
      remmina
      rsync
+     rxvt-unicode
      scrot
      sqlmap
      sshfs
