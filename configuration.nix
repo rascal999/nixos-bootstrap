@@ -78,6 +78,8 @@
      docker
      docker-compose
      electrum
+     enum4linux
+     fcrackzip
      feh
      ffmpeg
      filezilla
@@ -85,6 +87,7 @@
      gimp
      git
      git-crypt
+     gobuster
      helm
      htop
      i3
@@ -95,6 +98,7 @@
      keepassxc
      kubectl
      libreoffice-fresh
+     lynis
      mplayer
      mtr
      nmap
@@ -112,6 +116,7 @@
      sshfs
      syncthing
      testssl
+     thc-hydra
      tmux
      tor-browser-bundle-bin
      unzip
@@ -121,6 +126,7 @@
      wget
      whois
      wireshark-qt
+     wpscan
      x11vnc
      xlockmore
      zip
