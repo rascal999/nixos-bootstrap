@@ -144,6 +144,7 @@
   programs.zsh.ohMyZsh = {
     enable = true;
     plugins = [ "git" "sudo" "docker" "kubectl" ];
+    theme = "robbyrussell";
   };
 
   # Enable the OpenSSH daemon.
