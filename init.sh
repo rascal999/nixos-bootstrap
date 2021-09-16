@@ -43,16 +43,8 @@ sudo mount ${DISK}2 /mnt/boot
 
 # NixOS config
 sudo nixos-generate-config --root /mnt
-
-# Clone repo to user directory
-sudo mkdir -p /mnt/home/user
-sudo curl -L https://bit.ly/3EmjFlZ -o /mnt/home/user/master.zip
-sudo unzip /mnt/home/user/master.zip -d /mnt/home/user/
-
-# Hardlink configuration.nix
-sudo ln /mnt/home/user/configuration.nix /mnt/etc/nixos/configuration.nix
+sudo cp configuration.nix /mnt/etc/nixos/configuration.nix
 
 # NixOS install
 sleep 10
 sudo nixos-install
-
