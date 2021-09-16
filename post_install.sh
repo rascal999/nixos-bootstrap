@@ -12,8 +12,10 @@ rm $HOME/.gitignore*
 rm $HOME/README.md
 
 # Clone repo to user directory
-mkdir $HOME/git
-git clone https://github.com/rascal999/nixos-bootstrap.git $HOME/git
+#mkdir $HOME/git
+rm -rf $HOME/git/nixos-bootstrap-main
+git clone https://github.com/rascal999/nixos-bootstrap.git $HOME/git/nixos-bootstrap-main
 
 # Hardlink configuration.nix
-sudo ln $HOME/git/nixos-bootstrap/configuration.nix /etc/nixos/configuration.nix
+sudo mv /etc/nixos/configuration.nix /etc/nixos/configuration.nix.backup
+sudo ln $HOME/git/nixos-bootstrap-main/configuration.nix /etc/nixos/configuration.nix
