@@ -132,6 +132,14 @@
   # };
 
   # List services that you want to enable:
+  # Enable zsh
+  programs.zsh.enable = true;
+
+  # Enable Oh-my-zsh
+  programs.zsh.ohMyZsh = {
+    enable = true;
+    plugins = [ "git" "sudo" "docker" "kubectl" ];
+  };
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
