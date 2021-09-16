@@ -162,6 +162,7 @@
   nixpkgs.config.allowUnfree = true;
   # Start docker
   virtualisation.docker.enable = true;
+  virtualisation.docker.enableOnBoot = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
