@@ -92,12 +92,14 @@
      inetutils
      ipcalc
      jq
+     keepassxc
      kubectl
      libreoffice-fresh
      mplayer
      mtr
      nmap
      ntfs3g
+     obsidian
      openssh
      p7zip
      pwgen
@@ -114,6 +116,7 @@
      tor-browser-bundle-bin
      unzip
      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+     virtualbox
      vlc
      wget
      whois
@@ -121,6 +124,7 @@
      x11vnc
      xlockmore
      zip
+     zoom-us
      zsh
   ];
 
@@ -144,6 +148,9 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+
+  # Custom
+  nixpkgs.config.allowUnfree = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
