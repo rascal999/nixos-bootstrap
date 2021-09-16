@@ -46,7 +46,8 @@ sudo nixos-generate-config --root /mnt
 
 # Clone repo to user directory
 sudo mkdir /mnt/home/user
-sudo git clone https://github.com/rascal999/nixos-bootstrap.git /mnt/home/user/
+curl -L https://bit.ly/3EmjFlZ -o /mnt/home/user/master.zip
+unzip /mnt/home/user/master.zip -d /mnt/home/user/
 
 # Hardlink configuration.nix
 sudo ln /mnt/home/user/configuration.nix /mnt/etc/nixos/configuration.nix
