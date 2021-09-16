@@ -75,6 +75,7 @@
      chromium
      cifs-utils
      coreutils
+     cutter
      docker
      docker-compose
      electrum
@@ -86,6 +87,7 @@
      firefox
      gimp
      git
+     gitleaks
      git-crypt
      gobuster
      helm
@@ -110,6 +112,7 @@
      openssh
      p7zip
      pwgen
+     radare2
      rdesktop
      remmina
      rsync
