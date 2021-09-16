@@ -45,7 +45,7 @@ sudo mount ${DISK}2 /mnt/boot
 sudo nixos-generate-config --root /mnt
 
 # Clone repo to user directory
-sudo mkdir /mnt/home/user
+sudo mkdir -p /mnt/home/user
 curl -L https://bit.ly/3EmjFlZ -o /mnt/home/user/master.zip
 unzip /mnt/home/user/master.zip -d /mnt/home/user/
 
