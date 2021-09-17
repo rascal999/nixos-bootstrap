@@ -76,6 +76,7 @@
      cifs-utils
      coreutils
      cutter
+     dhcpcd
      docker
      docker-compose
      electrum
