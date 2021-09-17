@@ -108,6 +108,7 @@
      lynis
      mplayer
      mtr
+     nethogs
      nmap
      ntfs3g
      obsidian
