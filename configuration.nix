@@ -98,6 +98,7 @@
      i3status-rust
      inetutils
      ipcalc
+     iwctl
      john
      jq
      keepassxc
