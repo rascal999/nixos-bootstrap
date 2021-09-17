@@ -91,6 +91,7 @@
      gitleaks
      git-crypt
      gobuster
+     googler
      helm
      hexedit
      hping
