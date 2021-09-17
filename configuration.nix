@@ -98,7 +98,7 @@
      i3status-rust
      inetutils
      ipcalc
-     iwctl
+     iwd
      john
      jq
      keepassxc
@@ -172,6 +172,7 @@
   # Start docker
   virtualisation.docker.enable = true;
   virtualisation.docker.enableOnBoot = true;
+  networking.wireless.iwd.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
