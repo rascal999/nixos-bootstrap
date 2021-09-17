@@ -141,6 +141,7 @@
      wpscan
      x11vnc
      xlockmore
+     youtube-dl
      zip
      zoom-us
      zsh
