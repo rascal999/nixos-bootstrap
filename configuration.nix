@@ -141,6 +141,7 @@
      wireshark-qt
      wpscan
      x11vnc
+     xbacklight
      xlockmore
      youtube-dl
      zip

@@ -13,4 +13,4 @@ rm $HOME/README.md
 
 # Hardlink configuration.nix
 sudo mv /etc/nixos/configuration.nix /etc/nixos/configuration.nix.backup
-sudo cp $HOME/git/nixos-bootstrap-main/configuration.nix /etc/nixos/configuration.nix
+sudo cp $HOME/git/nixos-bootstrap/configuration.nix /etc/nixos/configuration.nix
