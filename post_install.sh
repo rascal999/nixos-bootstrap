@@ -11,6 +11,9 @@ rm $HOME/master.tar.gz
 rm $HOME/.gitignore*
 rm $HOME/README.md
 
+# asciinema
+mkdir $HOME/asciinema
+
 # Hardlink configuration.nix
 sudo mv /etc/nixos/configuration.nix /etc/nixos/configuration.nix.backup
 sudo cp $HOME/git/nixos-bootstrap/configuration.nix /etc/nixos/configuration.nix
