@@ -15,4 +15,5 @@ Reboot and run:
 git clone https://github.com/rascal999/nixos-bootstrap.git $HOME/git/nixos-bootstrap-main
 cd $HOME/git/nixos-bootstrap-main
 ./post_install.sh
+./pentest_resources.sh
 ```
