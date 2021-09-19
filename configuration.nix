@@ -118,6 +118,7 @@
      openssh
      p7zip
      pwgen
+     python3
      radare2
      rdesktop
      remmina
