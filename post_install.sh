@@ -30,3 +30,16 @@ fi
 # twmnc sound
 sudo mkdir -p $HOME/sounds
 sudo cp -rf $HOME/git/nixos-bootstrap/sounds/WAV_Calm.wav $HOME/sounds
+
+echo
+echo "# Firefox"
+echo "## Plugins"
+echo "- Dark Reader"
+echo "- uBlock Origin"
+echo "- Foxy Proxy"
+echo "- Read Aloud"
+echo "## Import bookmarks"
+echo
+echo "# Obsidian"
+echo "## Plugins"
+echo "- Advanced Appearance"
