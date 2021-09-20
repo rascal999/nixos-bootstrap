@@ -17,3 +17,12 @@ mkdir $HOME/asciinema
 # NixOS configuration.nix
 sudo mv /etc/nixos/configuration.nix /etc/nixos/configuration.nix.backup
 sudo cp $HOME/git/nixos-bootstrap/configuration.nix /etc/nixos/configuration.nix
+
+# Check NVIDIA
+NVIDIA=`lspci | grep VGA | grep -i nvidia | wc -l`
+
+# Comment out
+if [[ "$NVIDIA" == "0" ]]; then
+   echo "NVIDIA not detected"
+   sudo sed -i 's/\(services.xserver.videoDrivers = \[ "nvidia" \];\)/#\1/g' /etc/nixos/configuration.nix
+fi
