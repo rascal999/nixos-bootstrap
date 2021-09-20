@@ -47,6 +47,7 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.windowManager.i3.enable = true;
+  services.xserver.videoDrivers = [ "nvidia" ];
 
   # Configure keymap in X11
   services.xserver.layout = "dvorak";
@@ -110,6 +111,7 @@
      keepassxc
      kubectl
      libreoffice-fresh
+     lshw
      lynis
      mplayer
      mtr
@@ -177,7 +179,10 @@
   services.openssh.enable = true;
 
   ### Custom
+  # ntp
   services.ntp.enable = true;
+  # syncthing
+  services.syncthing.enable = true;
   # For Obsidian
   nixpkgs.config.allowUnfree = true;
   # Start docker
