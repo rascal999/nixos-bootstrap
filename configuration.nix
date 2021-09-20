@@ -130,6 +130,7 @@
      remmina
      rsync
      rxvt-unicode
+     screen
      scrot
      sqlmap
      sshfs
