@@ -121,6 +121,7 @@
      obsidian
      openssh
      p7zip
+     pciutils
      pwgen
      python3
      radare2
