@@ -183,6 +183,7 @@
   services.ntp.enable = true;
   # syncthing
   services.syncthing.enable = true;
+  services.syncthing.user = "user";
   # For Obsidian
   nixpkgs.config.allowUnfree = true;
   # Start docker
