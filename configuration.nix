@@ -106,6 +106,7 @@
      jdk
      john
      jq
+     jython
      keepassxc
      kubectl
      libreoffice-fresh
