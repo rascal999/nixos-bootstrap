@@ -185,6 +185,7 @@
   services.syncthing.enable = true;
   services.syncthing.user = "user";
   services.syncthing.dataDir = "/home/user/syncthing";
+  services.syncthing.configDir = "/home/user/.config/syncthing";
   # For Obsidian
   nixpkgs.config.allowUnfree = true;
   # Start docker
