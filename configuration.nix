@@ -103,6 +103,7 @@
      inetutils
      ipcalc
      iwd
+     jdk
      john
      jq
      keepassxc
