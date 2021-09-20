@@ -114,6 +114,7 @@
      lshw
      lynis
      mplayer
+     mpv
      mtr
      nethogs
      nmap
@@ -137,6 +138,7 @@
      thc-hydra
      tmux
      tor-browser-bundle-bin
+     twmn
      unzip
      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
      virtualbox
@@ -187,6 +189,7 @@
   services.syncthing.user = "user";
   services.syncthing.dataDir = "/home/user/syncthing";
   services.syncthing.configDir = "/home/user/.config/syncthing";
+
   # For Obsidian
   nixpkgs.config.allowUnfree = true;
   # Start docker

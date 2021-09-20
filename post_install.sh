@@ -26,3 +26,7 @@ if [[ "$NVIDIA" == "0" ]]; then
    echo "NVIDIA not detected"
    sudo sed -i 's/\(services.xserver.videoDrivers = \[ "nvidia" \];\)/#\1/g' /etc/nixos/configuration.nix
 fi
+
+# twmnc sound
+sudo mkdir -p $HOME/sounds
+sudo cp -rf $HOME/git/nixos-bootstrap/sounds/WAV_Calm.wav $HOME/sounds
