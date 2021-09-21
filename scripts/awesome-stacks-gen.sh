@@ -13,7 +13,7 @@ do
    echo "ds-${TARGET}() {"
    echo "    ds-net-traefik"
    echo "    DOMAIN=${TARGET}.ds docker stack deploy -c $HOME/git/misc/awesome-stacks/stacks/${TARGET}.yml $TARGET"
-   echo "    firefox https://${TARGET}.ds"
+   echo "    firefox https://${TARGET}.ds &"
    echo "    watch docker stack ps $TARGET"
    echo "}"
    echo
