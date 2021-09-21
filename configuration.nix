@@ -137,6 +137,7 @@
      syncthing
      testssl
      thc-hydra
+     thunderbird
      tmux
      tor-browser-bundle-bin
      twmn
