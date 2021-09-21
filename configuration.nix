@@ -123,6 +123,7 @@
      openssh
      p7zip
      pciutils
+     protonmail-bridge
      pwgen
      python3
      radare2
