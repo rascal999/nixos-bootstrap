@@ -84,6 +84,7 @@
      docker-compose
      electrum
      enum4linux
+     evolution
      fcrackzip
      feh
      ffmpeg
@@ -116,7 +117,6 @@
      libsecret
      lshw
      lynis
-     mailspring
      mplayer
      mpv
      mtr
