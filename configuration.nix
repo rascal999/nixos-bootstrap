@@ -125,6 +125,7 @@
      p7zip
      pass
      pciutils
+     pinentry
      protonmail-bridge
      pwgen
      python3
