@@ -207,6 +207,11 @@
   virtualisation.docker.liveRestore = false;
   # Wireless
   networking.wireless.iwd.enable = true;
+  # hosts file
+  networking.extraHosts =
+  ''
+    127.0.0.1 ghost.ds
+  '';
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
