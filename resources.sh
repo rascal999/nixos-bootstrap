@@ -463,7 +463,20 @@ git clone --depth 1 https://github.com/andresriancho/w3af.git $HOME/git/pentest-
 cd $HOME/git/pentest-tools/w3af
 git pull
 
+###
+###
+### Misc tools
+###
+###
+git clone https://github.com/ethibox/awesome-stacks.git $HOME/git/misc/awesome-stacks
+cd $HOME/git/misc/awesome-stacks
+git pull
+
+###
+###
 ### Wordlists
+###
+###
 git clone https://github.com/random-robbie/bruteforce-lists.git $HOME/git/wordlists/bruteforce-lists
 cd $HOME/git/wordlists/bruteforce-lists
 git pull
