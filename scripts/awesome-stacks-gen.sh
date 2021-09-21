@@ -6,7 +6,7 @@ echo "    docker stack deploy -c $HOME/git/misc/awesome-stacks/stacks/traefik.ym
 echo "}"
 echo
 
-for STACK in stacks/*
+for STACK in $HOME/git/misc/awesome-stacks/stacks/*
 do
    TARGET=`echo -n $STACK | gawk -F '/' '{ print $NF }' | sed 's/.yml//g'`
    echo "# $TARGET"
@@ -19,11 +19,13 @@ do
    echo
    echo "ds-${TARGET}-kill() {"
    echo "    docker stack rm $TARGET"
+   echo "    docker volume prune"
    echo "}"
    echo
 done
 
-for STACK in stacks/*
+echo -n "# "
+for STACK in $HOME/git/misc/awesome-stacks/stacks/*
 do
    TARGET=`echo -n $STACK | gawk -F '/' '{ print $NF }' | sed 's/.yml//g'`
    echo -n "${TARGET}.ds "
