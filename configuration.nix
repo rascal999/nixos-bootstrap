@@ -93,6 +93,7 @@
      git
      gitleaks
      git-crypt
+     gnome.gnome-keyring
      gnupg
      gobuster
      googler
@@ -112,8 +113,10 @@
      keepassxc
      kubectl
      libreoffice-fresh
+     libsecret
      lshw
      lynis
+     mailspring
      mplayer
      mpv
      mtr
@@ -141,7 +144,6 @@
      syncthing
      testssl
      thc-hydra
-     thunderbird
      tmux
      tor-browser-bundle-bin
      twmn
@@ -195,7 +197,8 @@
   services.syncthing.user = "user";
   services.syncthing.dataDir = "/home/user/syncthing";
   services.syncthing.configDir = "/home/user/.config/syncthing";
-
+  # Mailspring
+  services.gnome.gnome-keyring.enable = true;
   # For Obsidian
   nixpkgs.config.allowUnfree = true;
   # Start docker

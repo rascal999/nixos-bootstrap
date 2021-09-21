@@ -44,4 +44,4 @@ echo "# Obsidian"
 echo "## Plugins"
 echo "- Advanced Appearance"
 echo
-echo "# Thunderbird"
+echo "# Mailspring"
