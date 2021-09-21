@@ -199,11 +199,13 @@
   services.syncthing.configDir = "/home/user/.config/syncthing";
   # Mailspring
   services.gnome.gnome-keyring.enable = true;
-  # For Obsidian
+  # Obsidian
   nixpkgs.config.allowUnfree = true;
-  # Start docker
+  # docker
   virtualisation.docker.enable = true;
   virtualisation.docker.enableOnBoot = true;
+  virtualisation.docker.liveRestore = false;
+  # Wireless
   networking.wireless.iwd.enable = true;
 
   # Open ports in the firewall.
