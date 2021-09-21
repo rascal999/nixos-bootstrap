@@ -31,6 +31,9 @@ fi
 sudo mkdir -p $HOME/sounds
 sudo cp -rf $HOME/git/nixos-bootstrap/sounds/WAV_Calm.wav $HOME/sounds
 
+# docker swarm
+docker swarm init
+
 echo
 echo "# Firefox"
 echo "## Plugins"

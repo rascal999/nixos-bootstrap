@@ -19,6 +19,7 @@ do
    echo
    echo "ds-${TARGET}-kill() {"
    echo "    docker stack rm $TARGET"
+   echo "    sleep 6"
    echo "    docker volume prune"
    echo "}"
    echo
