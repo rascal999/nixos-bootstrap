@@ -122,6 +122,7 @@
      obsidian
      openssh
      p7zip
+     pass
      pciutils
      protonmail-bridge
      pwgen
