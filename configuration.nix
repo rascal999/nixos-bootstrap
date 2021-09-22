@@ -91,7 +91,6 @@
      ffmpeg
      filezilla
      firefox
-     font-awesome
      gimp
      git
      gitleaks
@@ -123,6 +122,7 @@
      mpv
      mtr
      navi
+     nerdfonts
      nethogs
      ngrok
      nmap
