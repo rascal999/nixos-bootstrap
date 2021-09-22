@@ -73,6 +73,7 @@ docker pull tuxotron/xvwa                               # Xtreme Vulnerable Web 
 docker pull filebrowser/filebrowser                     # Web File Browser 
 docker pull remnux/ciphey                               # Automatically decrypt, decode, and crack
 docker pull bettercap/bettercap                         # The Swiss Army knife for 802.11, BLE, IPv4 and IPv6 networks
+docker pull dominicbreuker/stego-toolkit                # Collection of steganography tools - helps with CTF challenges
 
 # hetty fs
 mkdir $HOME/.hetty
@@ -127,6 +128,26 @@ git pull
 ### Pentest Education
 ###
 ###
+# Reverse-Engineering
+git clone https://github.com/mytechnotalent/Reverse-Engineering.git $HOME/git/pentest-education/Reverse-Engineering
+cd $HOME/git/pentest-education/Reverse-Engineering
+git pull
+
+# hacker-roadmap
+git clone https://github.com/sundowndev/hacker-roadmap.git $HOME/git/pentest-education/hacker-roadmap
+cd $HOME/git/pentest-education/hacker-roadmap
+git pull
+
+# owasp-mstg
+git clone https://github.com/OWASP/owasp-mstg.git $HOME/git/pentest-education/owasp-mstg
+cd $HOME/git/pentest-education/owasp-mstg
+git pull
+
+# h4cker
+git clone https://github.com/The-Art-of-Hacking/h4cker.git $HOME/git/pentest-education/h4cker
+cd $HOME/git/pentest-education/h4cker
+git pull
+
 # Awesome-Hacking-Resources
 git clone https://github.com/vitalysim/Awesome-Hacking-Resources.git $HOME/git/pentest-education/Awesome-Hacking-Resources
 cd $HOME/git/pentest-education/Awesome-Hacking-Resources
