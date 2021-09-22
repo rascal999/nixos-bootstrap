@@ -210,7 +210,7 @@
   networking.wireless.iwd.enable = true;
   # VirtualBox
   virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "user" ]
+  users.extraGroups.vboxusers.members = [ "user" ];
   # hosts file
   networking.extraHosts =
   ''
