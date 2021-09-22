@@ -91,6 +91,7 @@
      ffmpeg
      filezilla
      firefox
+     font-awesome
      gimp
      git
      gitleaks
