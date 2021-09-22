@@ -123,6 +123,7 @@
      mtr
      navi
      nethogs
+     ngrok
      nmap
      ntfs3g
      obsidian
