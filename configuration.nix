@@ -120,6 +120,7 @@
      mplayer
      mpv
      mtr
+     navi
      nethogs
      nmap
      ntfs3g
