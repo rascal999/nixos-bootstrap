@@ -71,6 +71,7 @@ docker pull mutzel/all-in-one-hackazon:postinstall      # LAMP Hackazon deployme
 docker pull tuxotron/tiredful-api                       # Broken web application based on REST API
 docker pull tuxotron/xvwa                               # Xtreme Vulnerable Web Application
 docker pull filebrowser/filebrowser                     # Web File Browser 
+docker pull remnux/ciphey                               # Automatically decrypt, decode, and crack
 
 # hetty fs
 mkdir $HOME/.hetty
