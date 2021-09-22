@@ -74,6 +74,7 @@ docker pull filebrowser/filebrowser                     # Web File Browser
 docker pull remnux/ciphey                               # Automatically decrypt, decode, and crack
 docker pull bettercap/bettercap                         # The Swiss Army knife for 802.11, BLE, IPv4 and IPv6 networks
 docker pull dominicbreuker/stego-toolkit                # Collection of steganography tools - helps with CTF challenges
+docker pull oracleinanutshell/oracle-xe-11g             # Oracle DB
 
 # hetty fs
 mkdir $HOME/.hetty

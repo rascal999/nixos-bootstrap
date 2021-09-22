@@ -79,6 +79,7 @@
      cifs-utils
      coreutils
      cutter
+     dbeaver
      dhcpcd
      docker
      docker-compose
