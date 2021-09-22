@@ -125,6 +125,11 @@ git pull
 ### Pentest Education
 ###
 ###
+# RedTeam-Tactics-and-Techniques
+git clone https://github.com/mantvydasb/RedTeam-Tactics-and-Techniques.git $HOME/git/pentest-education/RedTeam-Tactics-and-Techniques
+cd $HOME/git/pentest-education/RedTeam-Tactics-and-Techniques
+git pull
+
 # top10webseclist
 git clone https://github.com/irsdl/top10webseclist.git $HOME/git/pentest-education/top10webseclist
 cd $HOME/git/pentest-education/top10webseclist
