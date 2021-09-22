@@ -72,6 +72,7 @@ docker pull tuxotron/tiredful-api                       # Broken web application
 docker pull tuxotron/xvwa                               # Xtreme Vulnerable Web Application
 docker pull filebrowser/filebrowser                     # Web File Browser 
 docker pull remnux/ciphey                               # Automatically decrypt, decode, and crack
+docker pull bettercap/bettercap                         # The Swiss Army knife for 802.11, BLE, IPv4 and IPv6 networks
 
 # hetty fs
 mkdir $HOME/.hetty
@@ -126,6 +127,11 @@ git pull
 ### Pentest Education
 ###
 ###
+# Awesome-Hacking-Resources
+git clone https://github.com/vitalysim/Awesome-Hacking-Resources.git $HOME/git/pentest-education/Awesome-Hacking-Resources
+cd $HOME/git/pentest-education/Awesome-Hacking-Resources
+git pull
+
 # RedTeam-Tactics-and-Techniques
 git clone https://github.com/mantvydasb/RedTeam-Tactics-and-Techniques.git $HOME/git/pentest-education/RedTeam-Tactics-and-Techniques
 cd $HOME/git/pentest-education/RedTeam-Tactics-and-Techniques
