@@ -208,6 +208,9 @@
   virtualisation.docker.liveRestore = false;
   # Wireless
   networking.wireless.iwd.enable = true;
+  # VirtualBox
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "user" ]
   # hosts file
   networking.extraHosts =
   ''
