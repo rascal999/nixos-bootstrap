@@ -132,6 +132,7 @@
      pass
      pciutils
      pinentry
+     peco
      protonmail-bridge
      pwgen
      python3
