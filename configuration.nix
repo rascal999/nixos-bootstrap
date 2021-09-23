@@ -187,6 +187,10 @@
   # List services that you want to enable:
   # Enable zsh
   programs.zsh.enable = true;
+  programs.zsh.autosuggestions.enable = true;
+  programs.zsh.completions.enable = true;
+  programs.zsh.completions.enable = true;
+  programs.zsh.enableSyntaxHighlighting = true;
 
   # Enable Oh-my-zsh
   programs.zsh.ohMyZsh = {
