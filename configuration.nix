@@ -91,6 +91,7 @@
      ffmpeg
      filezilla
      firefox
+     fzf
      gimp
      git
      gitleaks
@@ -168,7 +169,11 @@
      zip
      zoom-us
      zsh
+     zsh-autosuggestions
+     zsh-completions
      zsh-powerlevel10k
+     zsh-syntax-highlighting
+     zsh-z
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
