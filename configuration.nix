@@ -81,6 +81,7 @@
      cutter
      dbeaver
      dhcpcd
+     discord
      docker
      docker-compose
      electrum
