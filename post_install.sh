@@ -45,6 +45,10 @@ echo "## Import bookmarks"
 echo
 echo "# Obsidian"
 echo "## Plugins"
-echo "- Advanced Appearance"
+echo "- Calendar"
+echo "- Daily Notes"
+echo "- Kanban"
+echo "- Mindmap"
+echo "- Templates"
 echo
-echo "# Mailspring"
+echo "# ProtonMail"
