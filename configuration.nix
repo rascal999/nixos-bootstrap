@@ -118,11 +118,11 @@
      libsecret
      lshw
      lynis
+     meslo-lgs-nf
      mplayer
      mpv
      mtr
      navi
-     nerdfonts
      nethogs
      ngrok
      nmap
