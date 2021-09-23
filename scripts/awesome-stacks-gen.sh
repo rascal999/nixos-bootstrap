@@ -13,7 +13,7 @@ do
    echo "ds-${TARGET}() {"
    echo "    ds-net-traefik"
    echo "    DOMAIN=${TARGET}.ds docker stack deploy -c $HOME/git/misc/awesome-stacks/stacks/${TARGET}.yml $TARGET"
-   echo "    firefox https://${TARGET}.ds &"
+   echo "    firefox https://${TARGET}.ds &; disown"
    echo "    watch docker stack ps $TARGET"
    echo "}"
    echo
@@ -31,3 +31,6 @@ do
    TARGET=`echo -n $STACK | gawk -F '/' '{ print $NF }' | sed 's/.yml//g'`
    echo -n "${TARGET}.ds "
 done
+
+echo
+echo "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh"
