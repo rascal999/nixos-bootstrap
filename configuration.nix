@@ -189,7 +189,6 @@
   programs.zsh.enable = true;
   programs.zsh.autosuggestions.enable = true;
   programs.zsh.completions.enable = true;
-  programs.zsh.completions.enable = true;
   programs.zsh.enableSyntaxHighlighting = true;
 
   # Enable Oh-my-zsh
