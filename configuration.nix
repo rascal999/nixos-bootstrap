@@ -150,7 +150,6 @@
      syncthing
      testssl
      thc-hydra
-     timesyncd
      tmux
      tor-browser-bundle-bin
      twmn
@@ -205,6 +204,7 @@
   services.openssh.enable = true;
 
   ### Custom
+  services.timesyncd.enable = true;
   # syncthing
   services.syncthing.enable = true;
   services.syncthing.user = "user";
