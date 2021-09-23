@@ -100,6 +100,7 @@
      gnupg
      gobuster
      googler
+     grc
      helm
      hexedit
      hping
@@ -194,7 +195,7 @@
   programs.zsh.ohMyZsh = {
     enable = true;
     plugins = [ "git" "sudo" "docker" "kubectl" ];
-    theme = "robbyrussell";
+    #theme = "robbyrussell";
   };
 
   programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
