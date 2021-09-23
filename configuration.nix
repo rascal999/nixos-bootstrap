@@ -123,6 +123,7 @@
      mpv
      mtr
      navi
+     nerdfonts
      nethogs
      ngrok
      nmap
