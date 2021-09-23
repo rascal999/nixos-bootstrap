@@ -118,12 +118,10 @@
      libsecret
      lshw
      lynis
-     meslo-lgs-nf
      mplayer
      mpv
      mtr
      navi
-     nerdfonts
      nethogs
      ngrok
      nmap
@@ -217,6 +215,11 @@
   # VirtualBox
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "user" ];
+  # fonts
+  fonts.fonts = with pkgs; [
+    nerdfonts
+    meslo-lgs-nf
+  ];
   # hosts file
   networking.extraHosts =
   ''
