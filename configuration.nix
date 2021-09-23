@@ -168,6 +168,7 @@
      zip
      zoom-us
      zsh
+     zsh-powerlevel10k
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -188,6 +189,8 @@
     plugins = [ "git" "sudo" "docker" "kubectl" ];
     theme = "robbyrussell";
   };
+
+  programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
