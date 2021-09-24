@@ -76,6 +76,7 @@ docker pull bettercap/bettercap                         # The Swiss Army knife f
 docker pull dominicbreuker/stego-toolkit                # Collection of steganography tools - helps with CTF challenges
 docker pull oracleinanutshell/oracle-xe-11g             # Oracle DB
 docker pull rflathers/nginxserve                        # nginx
+docker pull ghcr.io/linuxserver/thelounge               # IRC client
 
 # hetty fs
 mkdir $HOME/.hetty
