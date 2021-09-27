@@ -165,6 +165,7 @@
      wpscan
      x11vnc
      xlockmore
+     xmind
      xorg.xbacklight
      youtube-dl
      zip
