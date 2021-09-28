@@ -81,6 +81,7 @@
      cutter
      dbeaver
      dhcpcd
+     dig
      docker
      docker-compose
      electrum
