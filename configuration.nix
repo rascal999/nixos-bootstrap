@@ -94,6 +94,7 @@
      filezilla
      firefox
      fzf
+     garmintools
      gimp
      git
      gitleaks
