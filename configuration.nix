@@ -79,6 +79,7 @@
      cifs-utils
      coreutils
      cutter
+     cups-brother-hl3140cw
      dbeaver
      dhcpcd
      dig
