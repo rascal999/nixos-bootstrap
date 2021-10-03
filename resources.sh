@@ -78,7 +78,6 @@ docker pull oracleinanutshell/oracle-xe-11g             # Oracle DB
 docker pull rflathers/nginxserve                        # nginx
 docker pull ghcr.io/linuxserver/thelounge               # IRC client
 docker pull mythril/myth                                # Security analysis tool for EVM bytecode
-docker pull luongnguyen/oyente                          # An Analysis Tool for Smart Contracts
 docker pull trailofbits/manticore                       # Symbolic execution tool for smart contracts
 
 # hetty fs
@@ -344,12 +343,6 @@ git pull
 ### TOOLS
 ###
 ###
-# oyente
-git clone https://github.com/enzymefinance/oyente.git $HOME/git/pentest-tools/oyente
-cd $HOME/git/pentest-tools/oyente
-git pull
-docker build -t oyente .
-
 # EyeWitness
 git clone https://github.com/FortyNorthSecurity/EyeWitness.git $HOME/git/pentest-tools/EyeWitness
 cd $HOME/git/pentest-tools/EyeWitness
