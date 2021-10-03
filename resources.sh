@@ -77,6 +77,9 @@ docker pull dominicbreuker/stego-toolkit                # Collection of steganog
 docker pull oracleinanutshell/oracle-xe-11g             # Oracle DB
 docker pull rflathers/nginxserve                        # nginx
 docker pull ghcr.io/linuxserver/thelounge               # IRC client
+docker pull mythril/myth                                # Security analysis tool for EVM bytecode
+docker pull luongnguyen/oyente                          # An Analysis Tool for Smart Contracts
+docker pull trailofbits/manticore                       # Symbolic execution tool for smart contracts
 
 # hetty fs
 mkdir $HOME/.hetty
