@@ -86,6 +86,11 @@ mkdir $HOME/.hetty
 ### Education
 ###
 ###
+# smart-contract-best-practices
+git clone https://github.com/ConsenSys/smart-contract-best-practices.git $HOME/git/education/smart-contract-best-practices
+cd $HOME/git/education/smart-contract-best-practices
+git pull
+
 # papers-we-love
 git clone https://github.com/papers-we-love/papers-we-love.git $HOME/git/education/papers-we-love
 cd $HOME/git/education/papers-we-love
