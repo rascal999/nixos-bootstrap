@@ -344,6 +344,12 @@ git pull
 ### TOOLS
 ###
 ###
+# oyente
+git clone https://github.com/enzymefinance/oyente.git $HOME/git/pentest-tools/oyente
+cd $HOME/git/pentest-tools/oyente
+git pull
+docker build -t oyente .
+
 # EyeWitness
 git clone https://github.com/FortyNorthSecurity/EyeWitness.git $HOME/git/pentest-tools/EyeWitness
 cd $HOME/git/pentest-tools/EyeWitness
