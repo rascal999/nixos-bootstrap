@@ -135,6 +135,7 @@
      p7zip
      pass
      pciutils
+     pdfgrep
      pinentry
      peco
      protonmail-bridge
