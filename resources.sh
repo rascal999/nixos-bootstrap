@@ -79,6 +79,7 @@ docker pull rflathers/nginxserve                        # nginx
 docker pull ghcr.io/linuxserver/thelounge               # IRC client
 docker pull mythril/myth                                # Security analysis tool for EVM bytecode
 docker pull trailofbits/manticore                       # Symbolic execution tool for smart contracts
+docker pull trailofbits/eth-security-toolbox            # Trail of Bits Ethereum security tools
 
 # hetty fs
 mkdir $HOME/.hetty
