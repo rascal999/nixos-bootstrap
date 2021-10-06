@@ -89,6 +89,11 @@ mkdir $HOME/.hetty
 ### Education
 ###
 ###
+# awesome-tunneling
+git clone https://github.com/anderspitman/awesome-tunneling $HOME/git/education/awesome-tunneling
+cd $HOME/git/education/awesome-tunneling
+git pull
+
 # smart-contract-best-practices
 git clone https://github.com/ConsenSys/smart-contract-best-practices.git $HOME/git/education/smart-contract-best-practices
 cd $HOME/git/education/smart-contract-best-practices
