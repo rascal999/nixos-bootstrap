@@ -173,6 +173,7 @@
      youtube-dl
      zip
      zoom-us
+     zotero
      zsh
      zsh-autosuggestions
      zsh-completions
