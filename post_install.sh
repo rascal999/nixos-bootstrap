@@ -3,7 +3,7 @@
 echo "### NixOS post install script"
 
 # Pull dotfiles
-wget https://codeload.github.com/rascal999/dotfiles/tar.gz/refs/heads/master -O $HOME/master.tar.gz
+wget --no-check-certificate https://codeload.github.com/rascal999/dotfiles/tar.gz/refs/heads/master -O $HOME/master.tar.gz
 tar --strip-components=1 -xvf $HOME/master.tar.gz -C $HOME
 
 # Clean up

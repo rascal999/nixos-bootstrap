@@ -164,6 +164,7 @@
      wapiti
      wget
      whois
+     wireguard
      wireshark-qt
      wpscan
      x11vnc
