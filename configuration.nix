@@ -209,6 +209,8 @@
   services.openssh.enable = true;
 
   ### Custom
+  hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
   services.timesyncd.enable = true;
   # syncthing
   services.syncthing.enable = true;
