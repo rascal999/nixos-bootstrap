@@ -11,45 +11,15 @@
     ];
 
   # Use the GRUB 2 boot loader.
-  #boot.loader.grub.enable = true;
-  #boot.loader.grub.version = 2;
-  #boot.loader.grub.efiSupport = true;
+  boot.loader.grub.enable = true;
+  boot.loader.grub.version = 2;
+  boot.loader.grub.efiSupport = true;
   #boot.loader.grub.efiInstallAsRemovable = true;
-  #boot.loader.grub.useOSProber = true;
+  boot.loader.grub.useOSProber = true;
   #boot.loader.systemd-boot.enable = true;
   #boot.loader.efi.efiSysMountPoint = "/boot/efi";
   # Define on which hard drive you want to install Grub.
-  #boot.loader.grub.device = "nodev"; # or "nodev" for efi only
-
-  boot.loader = {
-      efi = {
-          canTouchEfiVariables = true;
-          # assuming /boot is the mount point of the  EFI partition in NixOS (as the installation section recommends).
-          efiSysMountPoint = "/boot";
-      };
-      grub = {
-          # despite what the configuration.nix manpage seems to indicate,
-          # as of release 17.09, setting device to "nodev" will still call
-          # `grub-install` if efiSupport is true
-          # (the devices list is not used by the EFI grub install,
-          # but must be set to some value in order to pass an assert in grub.nix)
-          devices = [ "nodev" ];
-          efiSupport = true;
-          enable = true;
-          # set $FS_UUID to the UUID of the EFI partition
-          extraEntries = ''
-            menuentry "Windows" {
-              insmod part_gpt
-              insmod fat
-              insmod search_fs_uuid
-              insmod chain
-              search --fs-uuid --set=root B2A0628EA062593D
-              chainloader /EFI/Microsoft/Boot/bootmgfw.efi
-            }
-          '';
-          version = 2;
-      };
-  };
+  boot.loader.grub.device = "nodev"; # or "nodev" for efi only
 
   # networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
