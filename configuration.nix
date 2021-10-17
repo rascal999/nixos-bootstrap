@@ -143,6 +143,7 @@
      openssh
      p7zip
      pass
+     pavucontrol
      pciutils
      pdfgrep
      pinentry
