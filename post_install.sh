@@ -37,6 +37,7 @@ docker swarm init
 echo
 echo "# Firefox"
 echo "## Plugins"
+echo "- CanvasBlocker"
 echo "- ClearURLs"
 echo "- Dark Reader"
 echo "- Foxy Proxy"
