@@ -131,6 +131,7 @@
      libsecret
      lshw
      lynis
+     mosh
      mplayer
      mpv
      mtr
