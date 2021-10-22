@@ -39,7 +39,7 @@
   # Per-interface useDHCP will be mandatory in the future, so this generated config
   # replicates the default behaviour.
   #networking.useDHCP = false;
-  #networking.networkmanager.enable = true;
+  networking.networkmanager.enable = true;
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -227,12 +227,12 @@
   # Custom
   ###
   ## Wireless
-  networking.wireless.iwd.enable = true;
+  #networking.wireless.iwd.enable = true;
   #networking.networkmanager.enable = true;
-  networking.networkmanager.wifi.backend = "iwd";
+  #networking.networkmanager.wifi.backend = "iwd";
   ### Connman
-  services.connman.enable = true;
-  services.connman.wifi.backend = "iwd";
+  #services.connman.enable = true;
+  #services.connman.wifi.backend = "iwd";
   ## Bluetooth
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
