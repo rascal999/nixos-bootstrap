@@ -228,7 +228,7 @@
   ###
   ## Wireless
   networking.wireless.iwd.enable = true;
-  networking.networkmanager.enable = true;
+  #networking.networkmanager.enable = true;
   networking.networkmanager.wifi.backend = "iwd";
   ### Connman
   services.connman.enable = true;
