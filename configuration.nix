@@ -231,6 +231,7 @@
   networking.networkmanager.enable = true;
   networking.networkmanager.wifi.backend = "iwd";
   ### Connman
+  services.connman.enable = true;
   services.connman.wifi.backend = "iwd";
   ## Bluetooth
   hardware.bluetooth.enable = true;
