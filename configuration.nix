@@ -84,6 +84,7 @@
      acpi
      asciinema
      awscli
+     calibre
      chromium
      cifs-utils
      coreutils
