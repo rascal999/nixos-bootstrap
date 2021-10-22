@@ -86,6 +86,8 @@
      calibre
      chromium
      cifs-utils
+     connman
+     connman-gtk
      coreutils
      cutter
      cups-brother-hl3140cw
