@@ -162,6 +162,7 @@
      rxvt-unicode
      screen
      scrot
+     signal-desktop
      sqlmap
      sshfs
      syncthing
