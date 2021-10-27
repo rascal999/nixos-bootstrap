@@ -103,6 +103,7 @@
      feh
      ffmpeg
      filezilla
+     firecracker
      firefox
      fzf
      gimp
