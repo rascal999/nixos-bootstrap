@@ -104,6 +104,7 @@
      ffmpeg
      filezilla
      firecracker
+     firectl
      firefox
      fzf
      gimp
