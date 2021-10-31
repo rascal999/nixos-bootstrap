@@ -89,6 +89,11 @@ mkdir $HOME/.hetty
 ### Education
 ###
 ###
+# full-blockchain-solidity-course-py
+git clone https://github.com/smartcontractkit/full-blockchain-solidity-course-py $HOME/git/education/full-blockchain-solidity-course-py
+cd $HOME/git/education/full-blockchain-solidity-course-py
+git pull
+
 # awesome-tunneling
 git clone https://github.com/anderspitman/awesome-tunneling $HOME/git/education/awesome-tunneling
 cd $HOME/git/education/awesome-tunneling
