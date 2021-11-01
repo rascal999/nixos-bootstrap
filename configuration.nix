@@ -55,14 +55,7 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.windowManager.i3.enable = true;
-  services.xserver.videoDrivers = [
-    "nvidia"
-    "amdgpu"
-    "radeon"
-    "nouveau"
-    "modesetting"
-    "fbdev"
-  ];
+  services.xserver.videoDrivers = [ "nvidia" ];
 
   # Configure keymap in X11
   services.xserver.layout = "dvorak";
