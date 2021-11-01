@@ -19,7 +19,7 @@
   #boot.loader.systemd-boot.enable = true;
   #boot.loader.efi.efiSysMountPoint = "/boot/efi";
   # Define on which hard drive you want to install Grub.
-  boot.loader.grub.device = "nodev"; # or "nodev" for efi only
+  #boot.loader.grub.device = "nodev"; # or "nodev" for efi only
   boot.loader.grub.extraEntries = ''
     menuentry "Reboot" {
       reboot
