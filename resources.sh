@@ -39,6 +39,7 @@ docker pull fedora
 #docker pull kalilinux/kali-rolling
 
 # Other stuff
+docker pull trufflesuite/ganache-cli                    # Local blockchain dev
 docker pull owasp/zap2docker-stable                     # official OWASP ZAP
 docker pull wpscanteam/wpscan                           # official WPScan
 docker pull metasploitframework/metasploit-framework    # Official Metasploit
