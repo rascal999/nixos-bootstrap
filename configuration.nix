@@ -167,6 +167,7 @@
      signal-desktop
      sqlmap
      sshfs
+     steam
      syncthing
      testssl
      thc-hydra
