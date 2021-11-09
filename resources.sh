@@ -17,7 +17,7 @@ function docker_pull_prompt() {
     while true; do
         read -p "$1 rebuilt daily, pull? [yN] " yn
         case $yn in
-            [Yy]* ) docker pull $1; break;;
+            [Yy]* ) echo "Pulling.."; screen -S "$2" -adm docker pull $1; break;;
             [Nn]* ) break;;
             * ) break;;
         esac
@@ -26,8 +26,8 @@ function docker_pull_prompt() {
 
 # Prompts
 docker_login_prompt
-docker_pull_prompt booyaabes/kali-linux-full
-docker_pull_prompt firefart/dockerctf           # Docker image with some common ctf tools
+docker_pull_prompt booyaabes/kali-linux-full docker_pull-kali-linux-full
+docker_pull_prompt firefart/dockerctf docker_pull-dockerctf          # Docker image with some common ctf tools
 
 # Operating Systems
 docker pull alpine
@@ -90,6 +90,11 @@ mkdir $HOME/.hetty
 ### Education
 ###
 ###
+# awesome-openzeppelin
+git clone https://github.com/OpenZeppelin/awesome-openzeppelin $HOME/git/education/awesome-openzeppelin
+cd $HOME/git/education/awesome-openzeppelin
+git pull
+
 # full-blockchain-solidity-course-py
 git clone https://github.com/smartcontractkit/full-blockchain-solidity-course-py $HOME/git/education/full-blockchain-solidity-course-py
 cd $HOME/git/education/full-blockchain-solidity-course-py
