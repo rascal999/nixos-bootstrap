@@ -224,6 +224,9 @@
 
   programs.zsh.promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
+  # Laptop light
+  programs.light.enable = true;
+
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
 
