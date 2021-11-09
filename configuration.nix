@@ -144,6 +144,7 @@
      networkmanager
      ngrok
      nmap
+     nodePackages_latest.ganache-cli
      ntfs3g
      obsidian
      openssh
