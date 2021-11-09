@@ -242,6 +242,8 @@
   services.blueman.enable = true;
   ## Timesync
   services.timesyncd.enable = true;
+  ## Ignore lid on laptops
+  services.logind.lidSwitch = "ignore";
   ## syncthing
   services.syncthing.enable = true;
   services.syncthing.user = "user";
