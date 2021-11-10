@@ -118,7 +118,6 @@
      gobuster
      googler
      grc
-     helm
      hexedit
      hping
      htop
