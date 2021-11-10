@@ -131,6 +131,7 @@
      john
      jq
      jython
+     k3s
      keepassxc
      kubectl
      libreoffice-fresh
@@ -250,6 +251,10 @@
   services.blueman.enable = true;
   ## Timesync
   services.timesyncd.enable = true;
+  # k3s
+  #networking.firewall.allowedTCPPorts = [ 6443 ];
+  services.k3s.enable = true;
+  services.k3s.role = "server";
   ## Ignore lid on laptops
   services.logind.lidSwitch = "ignore";
   ## syncthing
