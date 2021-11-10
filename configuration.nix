@@ -106,6 +106,7 @@
      firecracker
      firectl
      firefox
+     flameshot
      fzf
      gimp
      git
@@ -142,6 +143,7 @@
      navi
      nethogs
      networkmanager
+     ngrep
      ngrok
      nmap
      ntfs3g
