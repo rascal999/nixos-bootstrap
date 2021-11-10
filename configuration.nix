@@ -134,6 +134,7 @@
      k3s
      keepassxc
      kubectl
+     kubernetes-helm
      libreoffice-fresh
      libsecret
      lshw
