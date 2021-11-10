@@ -112,6 +112,7 @@
      git
      gitleaks
      git-crypt
+     glances
      gnome.gnome-keyring
      gnupg
      gobuster
@@ -173,6 +174,7 @@
      syncthing
      testssl
      thc-hydra
+     tig
      tmux
      #tor-browser-bundle-bin
      twmn
