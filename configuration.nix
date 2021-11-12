@@ -141,6 +141,7 @@
      libsecret
      lshw
      lynis
+     mako
      mosh
      mplayer
      mpv
