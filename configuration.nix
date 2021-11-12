@@ -215,6 +215,8 @@
       enable = true;
       enableSSHSupport = true;
   };
+  # Steam
+  programs.steam.enable = true;
 
   # List services that you want to enable:
   # Enable zsh
