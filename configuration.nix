@@ -188,6 +188,7 @@
      w3m
      wafw00f
      wapiti
+     waybar
      wget
      whois
      wireguard
