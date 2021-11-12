@@ -120,6 +120,7 @@
      gobuster
      googler
      grc
+     grim
      hexedit
      hping
      htop
