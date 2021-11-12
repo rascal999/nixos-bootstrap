@@ -56,7 +56,6 @@
 
   # Enable the X11 windowing system.
   #services.xserver.enable = true;
-  #services.xserver.windowManager.i3.enable = true;
   #services.xserver.videoDrivers = [ "nvidia" ];
 
   # Configure keymap in X11
@@ -124,8 +123,6 @@
      hexedit
      hping
      htop
-     i3
-     i3status-rust
      inetutils
      ipcalc
      iwd
@@ -152,6 +149,7 @@
      ngrep
      ngrok
      nmap
+     notify-desktop
      ntfs3g
      obsidian
      openssh
