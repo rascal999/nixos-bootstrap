@@ -27,6 +27,15 @@ if [[ "$NVIDIA" == "0" ]]; then
    sudo sed -i 's/\(services.xserver.videoDrivers = \[ "nvidia" \];\)/#\1/g' /etc/nixos/configuration.nix
 fi
 
+# Check Iris
+IRIS=`lspci | grep VGA | grep -i Iris | wc -l`
+
+# Comment out
+if [[ "$IRIS" == "1" ]]; then
+   echo "Iris detected"
+   sudo sed -i 's/#\(services.xserver.videoDrivers =\) \[ "nvidia" \];/\1 \[ "intel" \];/g' /etc/nixos/configuration.nix
+fi
+
 # twmnc sound
 sudo mkdir -p $HOME/sounds
 sudo cp -rf $HOME/git/nixos-bootstrap/sounds/WAV_Calm.wav $HOME/sounds
