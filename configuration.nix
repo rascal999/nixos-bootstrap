@@ -195,8 +195,8 @@
      x11vnc
      xlockmore
      xmind
-     xmodmap
      xorg.xbacklight
+     xorg.xmodmap
      youtube-dl
      zip
      zoom-us
