@@ -195,6 +195,7 @@
      x11vnc
      xlockmore
      xmind
+     xmodmap
      xorg.xbacklight
      youtube-dl
      zip
