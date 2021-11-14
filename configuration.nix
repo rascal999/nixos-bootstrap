@@ -73,6 +73,7 @@
      asciinema
      awscli
      brightnessctl
+     brillo
      calibre
      chromium
      cifs-utils
