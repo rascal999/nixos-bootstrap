@@ -40,7 +40,6 @@
   # The global useDHCP flag is deprecated, therefore explicitly set to false here.
   # Per-interface useDHCP will be mandatory in the future, so this generated config
   # replicates the default behaviour.
-  #networking.useDHCP = false;
   networking.networkmanager.enable = true;
 
   # Configure network proxy if necessary
@@ -54,23 +53,12 @@
   #   keyMap = "us";
   # };
 
-  # Enable the X11 windowing system.
-  #services.xserver.enable = true;
-  #services.xserver.videoDrivers = [ "nvidia" ];
-
-  # Configure keymap in X11
-  services.xserver.layout = "dvorak";
-  # services.xserver.xkbOptions = "eurosign:e";
-
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
   # Enable sound.
   sound.enable = true;
   hardware.pulseaudio.enable = true;
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.user = {
@@ -247,13 +235,6 @@
   ###
   # Custom
   ###
-  ## Wireless
-  #networking.wireless.iwd.enable = true;
-  #networking.networkmanager.enable = true;
-  #networking.networkmanager.wifi.backend = "iwd";
-  ### Connman
-  #services.connman.enable = true;
-  #services.connman.wifi.backend = "iwd";
   ## Bluetooth
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
@@ -272,7 +253,7 @@
   services.syncthing.configDir = "/home/user/.config/syncthing";
   ## Mailspring
   services.gnome.gnome-keyring.enable = true;
-  ## Obsidian
+  ## For Obsidian
   nixpkgs.config.allowUnfree = true;
   ## docker
   virtualisation.docker.enable = true;
