@@ -72,6 +72,7 @@
      acpi
      asciinema
      awscli
+     brightnessctl
      calibre
      chromium
      cifs-utils
