@@ -164,6 +164,7 @@
      sqlmap
      sshfs
      steam
+     stockfish
      sway
      syncthing
      testssl
