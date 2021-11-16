@@ -75,6 +75,7 @@
      brightnessctl
      brillo
      calibre
+     chessx
      chromium
      cifs-utils
      connman
