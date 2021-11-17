@@ -161,6 +161,7 @@
      screen
      scrot
      signal-desktop
+     sqlite-web
      sqlmap
      sshfs
      steam
