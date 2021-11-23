@@ -168,6 +168,7 @@
      stockfish
      sway
      syncthing
+     tangram
      testssl
      thc-hydra
      tig
