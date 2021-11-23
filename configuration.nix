@@ -74,6 +74,7 @@
      awscli
      brightnessctl
      brillo
+     burpsuite
      calibre
      chromium
      cifs-utils
@@ -104,7 +105,6 @@
      gitleaks
      git-crypt
      glances
-     glib-networking
      gnome.gnome-keyring
      gnupg
      gobuster
@@ -169,7 +169,6 @@
      stockfish
      sway
      syncthing
-     tangram
      testssl
      thc-hydra
      tig
