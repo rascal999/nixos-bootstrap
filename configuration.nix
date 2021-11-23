@@ -104,6 +104,7 @@
      gitleaks
      git-crypt
      glances
+     glib-networking
      gnome.gnome-keyring
      gnupg
      gobuster
