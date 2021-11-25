@@ -143,6 +143,7 @@
      notify-desktop
      ntfs3g
      obsidian
+     openconnect
      openssh
      openssl
      p7zip
