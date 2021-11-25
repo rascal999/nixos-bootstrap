@@ -144,6 +144,7 @@
      ntfs3g
      obsidian
      openssh
+     openssl
      p7zip
      pass
      pavucontrol
