@@ -242,6 +242,20 @@
   ###
   # Custom
   ###
+  checkInputs = [ pytestCheckHook ];
+
+  # requires additional data
+  pytestFlagsArray = [ "tests/" "--ignore=tests/integration" ];
+
+  disabledTests = [
+    # touches network
+    "download"
+    "update"
+  ];
+
+  disabledTestPaths = [
+    "tests/"
+  ];
   ## Bluetooth
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
