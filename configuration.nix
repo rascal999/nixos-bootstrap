@@ -10,7 +10,7 @@
       ./hardware-configuration.nix
     ];
 
-  boot.kernelPackages = pkgs.linuxPackages_testing;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelParams = [ "intel_pstate=active" ];
   # Use the GRUB 2 boot loader.
   boot.loader.grub.enable = true;
@@ -292,6 +292,6 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "21.05"; # Did you read the comment?
+  system.stateVersion = "21.11"; # Did you read the comment?
 
 }
