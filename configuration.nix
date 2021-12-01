@@ -74,7 +74,7 @@
      awscli
      brightnessctl
      brillo
-     burpsuite
+     #burpsuite
      calibre
      chromium
      cifs-utils
