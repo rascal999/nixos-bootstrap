@@ -266,7 +266,7 @@
     package = (pkgs.python3.overrideAttrs (oldAttrs: rec {
       doCheck = false;
     }
-  }
+  }))
 
   ## For Obsidian
   nixpkgs.config.allowUnfree = true;
