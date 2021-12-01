@@ -277,7 +277,7 @@
 
 
 
-  buildPythonPackage rec {
+  fuck = buildPythonPackage rec {
     pname = "httpx-socks";
     version = "0.4.1";
     disabled = pythonOlder "3.6";
