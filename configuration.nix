@@ -242,15 +242,6 @@
   ###
   # Custom
   ###
-
-  # Python3
-  let
-    pkgs = import ./. {};
-    mypython = pkgs.python3.override {
-      self = mypython;
-    };
-  in mypython
-
   ## Bluetooth
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
