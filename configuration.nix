@@ -242,11 +242,6 @@
   ###
   # Custom
   ###
-
-  pkgs.python3.overrideAttrs (oldAttrs: rec {
-    doCheck = false;
-  });
-
   ## Bluetooth
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
