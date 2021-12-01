@@ -243,7 +243,7 @@
   # Custom
   ###
 
-  pythonTests = pkgs.python3.overrideAttrs (oldAttrs: rec {
+  pkgs.python3.overrideAttrs (oldAttrs: rec {
     doCheck = false;
   });
 
