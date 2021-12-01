@@ -245,12 +245,11 @@
 
   # Python3
   let
-    python = pkgs.python3;
-    disabledTestPaths = [
-      "tests/"
-    ];
-  in
-  python
+    pkgs = import ./. {};
+    mypython = pkgs.python3.override {
+      self = mypython;
+    };
+  in mypython
 
   ## Bluetooth
   hardware.bluetooth.enable = true;
