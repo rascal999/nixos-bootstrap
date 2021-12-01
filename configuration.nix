@@ -262,7 +262,7 @@
   services.gnome.gnome-keyring.enable = true;
 
   ## Python3 tests
-  services.python3 = {
+  packages.python3 = {
     package = (pkgs.python3.overrideAttrs (oldAttrs: rec {
       doCheck = false;
     }));
