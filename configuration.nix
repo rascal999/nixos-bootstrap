@@ -243,9 +243,14 @@
   # Custom
   ###
 
-  disabledTestPaths = [
-    "tests/"
-  ];
+  # Python3
+  (let
+    python = pkgs.python3;
+    disabledTestPaths = [
+      "tests/"
+    ];
+  in
+  python)
 
   ## Bluetooth
   hardware.bluetooth.enable = true;
