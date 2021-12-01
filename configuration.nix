@@ -244,13 +244,13 @@
   ###
 
   # Python3
-  (let
+  let
     python = pkgs.python3;
     disabledTestPaths = [
       "tests/"
     ];
   in
-  python)
+  python
 
   ## Bluetooth
   hardware.bluetooth.enable = true;
