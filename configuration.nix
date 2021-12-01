@@ -260,14 +260,6 @@
   services.syncthing.configDir = "/home/user/.config/syncthing";
   ## Mailspring
   services.gnome.gnome-keyring.enable = true;
-
-  ## Python3 tests
-  package.python3 = {
-    package = (pkgs.python3.overrideAttrs (oldAttrs: rec {
-      doCheck = false;
-    }));
-  };
-
   ## For Obsidian
   nixpkgs.config.allowUnfree = true;
   ## docker
