@@ -155,7 +155,7 @@
      peco
      protonmail-bridge
      pwgen
-     python3
+     #python3
      radare2
      rdesktop
      remmina
