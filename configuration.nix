@@ -265,7 +265,7 @@
   services.python3 = {
     package = (pkgs.python3.overrideAttrs (oldAttrs: rec {
       doCheck = false;
-    ))};
+    }));
   };
 
   ## For Obsidian
