@@ -74,7 +74,7 @@
      awscli
      brightnessctl
      brillo
-     #burpsuite
+     burpsuite
      calibre
      chromium
      cifs-utils
@@ -167,7 +167,7 @@
      sqlite-web
      sqlmap
      sshfs
-     steam
+     #steam
      stockfish
      sway
      syncthing
@@ -178,11 +178,11 @@
      #tor-browser-bundle-bin
      unrar
      unzip
-     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+     vim
      vlc
      w3m
      wafw00f
-     wapiti
+     #wapiti
      waybar
      wget
      whois
@@ -214,7 +214,7 @@
       enableSSHSupport = true;
   };
   # Steam
-  programs.steam.enable = true;
+  #programs.steam.enable = true;
   # Sway
   programs.sway.enable = true;
 

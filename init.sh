@@ -26,23 +26,34 @@ fi
 
 # Partition
 sudo parted $DISK -- mklabel gpt
-sudo parted $DISK -- mkpart primary 512MiB 100%
 sudo parted $DISK -- mkpart ESP fat32 1MiB 512MiB
-sudo parted $DISK -- set 2 esp on
+sudo parted $DISK -- mkpart primary 512MiB 100%
+sudo parted $DISK -- set 1 esp on
+
+BOOT_PARTITION="1"
+ROOT_PARTITION="2"
+NVME=`echo $DISK | grep -i nvme | wc -l`
+
+if [[ "$NVME" == "1" ]]; then
+    echo "NVME disk.."
+    BOOT_PARTITION="p1"
+    ROOT_PARTITION="p2"
+fi
 
 # LUKS + ext4
-sudo cryptsetup luksFormat ${DISK}1
-sudo cryptsetup luksOpen ${DISK}1 root
+sudo mkfs.fat -F 32 -n boot ${DISK}${BOOT_PARTITION}
+sudo cryptsetup luksFormat ${DISK}${ROOT_PARTITION}
+sudo cryptsetup luksOpen ${DISK}${ROOT_PARTITION} root
 sudo mkfs.ext4 /dev/mapper/root
-sudo mkfs.fat -F 32 -n boot ${DISK}2
 
 # Mount
 sudo mount /dev/mapper/root /mnt
 sudo mkdir /mnt/boot
-sudo mount ${DISK}2 /mnt/boot
+sudo mount ${DISK}${BOOT_PARTITION} /mnt/boot
 
 # NixOS config
 sudo nixos-generate-config --root /mnt
+sudo cp /mnt/etc/nixos/configuration.nix /mnt/etc/nixos/configuration.nix.backup
 sudo cp configuration.nix /mnt/etc/nixos/configuration.nix
 
 # NixOS install
