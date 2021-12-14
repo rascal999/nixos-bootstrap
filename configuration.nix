@@ -112,6 +112,7 @@
      googler
      grc
      grim
+     gsettings-desktop-schemas
      hexedit
      hping
      htop
