@@ -70,6 +70,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
      acpi
+     appimage-run
      asciinema
      awscli
      brightnessctl
