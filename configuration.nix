@@ -189,6 +189,7 @@
      wireguard
      wireshark-qt
      wpscan
+     x11docker
      x11vnc
      xlockmore
      xmind
