@@ -195,6 +195,7 @@
      xmind
      xorg.xbacklight
      xorg.xmodmap
+     xwayland
      youtube-dl
      zip
      zoom-us
