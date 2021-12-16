@@ -82,6 +82,7 @@ docker pull mythril/myth                                # Security analysis tool
 docker pull trailofbits/manticore                       # Symbolic execution tool for smart contracts
 docker pull trailofbits/eth-security-toolbox            # Trail of Bits Ethereum security tools
 docker pull williamjackson/cartography                  # Consolidates infrastructure assets and the relationships between them
+docker pull mlabouardy/komiser                          # Cloud Environment Inspector
 
 # hetty fs
 mkdir $HOME/.hetty
