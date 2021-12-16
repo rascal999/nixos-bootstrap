@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  cartography:
+    image: ghcr.io/williamjacksn/cartography
+    command:
+      - --neo4j-uri
+      - bolt://neo4j:7687
+    volumes:
+      # assuming you have configured AWS credentials in your home directory, mount them into the container
+      - ~/.aws:/home/user/.aws
+
+  neo4j:
+    image: neo4j:3.5.14
+    environment:
+      NEO4J_AUTH: none
+    volumes:
+      - neo4j-data:/data
+    ports:
+      - 7474:7474
+      - 7687:7687
+
+volumes:
+  neo4j-data:

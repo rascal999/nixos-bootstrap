@@ -363,6 +363,11 @@ git pull
 ### TOOLS
 ###
 ###
+# aws-security-viz
+git clone https://github.com/anaynayak/aws-security-viz.git $HOME/git/pentest-tools/aws-security-viz
+cd $HOME/git/pentest-tools/aws-security-viz
+docker build -t sec-viz .
+
 # CloudMapper
 git clone https://github.com/duo-labs/cloudmapper.git $HOME/git/pentest-tools/cloudmapper
 cd $HOME/git/pentest-tools/cloudmapper
