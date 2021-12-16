@@ -84,6 +84,9 @@ docker pull trailofbits/eth-security-toolbox            # Trail of Bits Ethereum
 docker pull williamjackson/cartography                  # Consolidates infrastructure assets and the relationships between them
 docker pull mlabouardy/komiser                          # Cloud Environment Inspector
 docker pull toniblyx/prowler                            # Perform AWS security audits
+docker pull arkadiyt/aws_public_ips                     # Fetch all public IP addresses tied to your AWS account
+docker pull accurics/terrascan                          # Detect compliance and security violations across IaC
+docker pull bridgecrew/checkov                          # Checkov is a static code analysis tool for infrastructure-as-code
 
 # hetty fs
 mkdir $HOME/.hetty
@@ -93,6 +96,54 @@ mkdir $HOME/.hetty
 ### Education
 ###
 ###
+
+# PDFs
+## AWS
+mkdir -p $HOME/pdfs/education/aws
+wget -c https://d1.awsstatic.com/whitepapers/aws-overview.pdf \
+    -O $HOME/pdfs/education/aws/aws-overview.pdf
+wget https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/introduction-aws-security.pdf \
+    -O $HOME/pdfs/education/aws/introduction-aws-security.pdf
+wget https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/wellarchitected-security-pillar.pdf \
+    -O $HOME/pdfs/education/aws/wellarchitected-security-pillar.pdf
+wget https://d1.awsstatic.com/whitepapers/compliance/Intro_to_Security_by_Design.pdf \
+    -O $HOME/pdfs/education/aws/Intro_to_Security_by_Design.pdf
+wget -c https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf
+    -O $HOME/pdfs/education/aws/AWS_Well-Architected_Framework.pdf
+wget -c https://d0.awsstatic.com/whitepapers/compliance/AWS_Risk_and_Compliance_Whitepaper.pdf
+    -O $HOME/pdfs/education/aws/AWS_Risk_and_Compliance_Whitepaper.pdf
+wget -c https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Checklist.pdf
+    -O $HOME/pdfs/education/aws/AWS_Security_Checklist.pdf
+wget -c https://d0.awsstatic.com/whitepapers/compliance/AWS_HIPAA_Compliance_Whitepaper.pdf
+    -O $HOME/pdfs/education/aws/AWS_HIPAA_Compliance_Whitepaper.pdf
+wget -c https://d1.awsstatic.com/whitepapers/aws_cloud_adoption_framework.pdf
+    -O $HOME/pdfs/education/aws/aws_cloud_adoption_framework.pdf
+wget -c https://d1.awsstatic.com/whitepapers/compliance/AWS_Auditing_Security_Checklist.pdf
+    -O $HOME/pdfs/education/aws/AWS_Auditing_Security_Checklist.pdf
+wget -c https://d1.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf
+    -O $HOME/pdfs/education/aws/AWS_CIS_Foundations_Benchmark.pdf
+wget -c https://d1.awsstatic.com/whitepapers/aws_security_incident_response.pdf
+    -O $HOME/pdfs/education/aws/aws_security_incident_response.pdf
+wget -c https://d1.awsstatic.com/whitepapers/Overview-AWS-Lambda-Security.pdf
+    -O $HOME/pdfs/education/aws/Overview-AWS-Lambda-Security.pdf
+wget -c https://d1.awsstatic.com/whitepapers/aws-kms-best-practices.pdf
+    -O $HOME/pdfs/education/aws/aws-kms-best-practices.pdf
+wget -c https://d1.awsstatic.com/whitepapers/Security/amazon-efs-encrypted-filesystems.pdf
+    -O $HOME/pdfs/education/aws/amazon-efs-encrypted-filesystems.pdf
+wget -c https://d1.awsstatic.com/whitepapers/Security/security-of-aws-cloudhsm-backups.pdf
+    -O $HOME/pdfs/education/aws/security-of-aws-cloudhsm-backups.pdf
+wget -c https://docs.aws.amazon.com/whitepapers/latest/security-overview-aws-lambda/security-overview-aws-lambda.pdf
+    -O $HOME/pdfs/education/aws/security-overview-aws-lambda.pdf
+wget -c https://d0.awsstatic.com/whitepapers/compliance/NIST_Cybersecurity_Framework_CSF.pdf
+    -O $HOME/pdfs/education/aws/NIST_Cybersecurity_Framework_CSF.pdf
+wget -c https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-144.pdf
+    -O $HOME/pdfs/education/aws/nistspecialpublication800-144.pdf
+wget -c https://d1.awsstatic.com/whitepapers/Security/security-at-the-edge.pdf
+    -O $HOME/pdfs/education/aws/security-at-the-edge.pdf
+wget -c https://d0.awsstatic.com/whitepapers/aws-kms-best-practices.pdf
+    -O $HOME/pdfs/education/aws/aws-kms-best-practices.pdf
+
+# GitHub
 # awesome-openzeppelin
 git clone https://github.com/OpenZeppelin/awesome-openzeppelin $HOME/git/education/awesome-openzeppelin
 cd $HOME/git/education/awesome-openzeppelin
@@ -158,6 +209,16 @@ git pull
 ### Pentest Education
 ###
 ###
+# my-arsenal-of-aws-security-tools
+git clone https://github.com/toniblyx/my-arsenal-of-aws-security-tools.git $HOME/git/education/my-arsenal-of-aws-security-tools
+cd $HOME/git/education/my-arsenal-of-aws-security-tools
+git pull
+
+# awesome-aws-security
+git clone https://github.com/jassics/awesome-aws-security.git $HOME/git/education/awesome-aws-security
+cd $HOME/git/education/awesome-aws-security
+git pull
+
 # Reverse-Engineering
 git clone https://github.com/mytechnotalent/Reverse-Engineering.git $HOME/git/pentest-education/Reverse-Engineering
 cd $HOME/git/pentest-education/Reverse-Engineering
@@ -363,6 +424,16 @@ git pull
 ### TOOLS
 ###
 ###
+# cloudsploit
+git clone https://github.com/aquasecurity/cloudsploit.git $HOME/git/pentest-tools/cloudsploit
+cd $HOME/git/pentest-tools/cloudsploit
+docker build . -t cloudsploit:0.0.1
+
+# S3Scanner
+git clone https://github.com/sa7mon/S3Scanner.git $HOME/git/pentest-tools/S3Scanner
+cd $HOME/git/pentest-tools/S3Scanner
+docker build . -t s3scanner:latest
+
 # aws-security-viz
 git clone https://github.com/anaynayak/aws-security-viz.git $HOME/git/pentest-tools/aws-security-viz
 cd $HOME/git/pentest-tools/aws-security-viz
