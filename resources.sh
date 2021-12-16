@@ -360,6 +360,11 @@ git pull
 ### TOOLS
 ###
 ###
+# CloudMapper
+git clone https://github.com/duo-labs/cloudmapper.git $HOME/git/pentest-tools/cloudmapper
+cd $HOME/git/pentest-tools/cloudmapper
+docker build -t cloudmapper .
+
 # EyeWitness
 git clone https://github.com/FortyNorthSecurity/EyeWitness.git $HOME/git/pentest-tools/EyeWitness
 cd $HOME/git/pentest-tools/EyeWitness
