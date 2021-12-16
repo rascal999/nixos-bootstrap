@@ -83,6 +83,7 @@ docker pull trailofbits/manticore                       # Symbolic execution too
 docker pull trailofbits/eth-security-toolbox            # Trail of Bits Ethereum security tools
 docker pull williamjackson/cartography                  # Consolidates infrastructure assets and the relationships between them
 docker pull mlabouardy/komiser                          # Cloud Environment Inspector
+docker pull toniblyx/prowler                            # Perform AWS security audits
 
 # hetty fs
 mkdir $HOME/.hetty
