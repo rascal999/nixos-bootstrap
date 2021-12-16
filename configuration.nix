@@ -89,6 +89,7 @@
      dig
      docker
      docker-compose
+     dunst
      electrum
      enum4linux
      evolution
