@@ -8,7 +8,7 @@ services:
       - bolt://neo4j:7687
     volumes:
       # assuming you have configured AWS credentials in your home directory, mount them into the container
-      - ~/.aws:/home/user/.aws
+      - ~/.aws:/home/python/.aws
 
   neo4j:
     image: neo4j:3.5.14
