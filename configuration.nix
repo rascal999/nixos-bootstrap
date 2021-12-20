@@ -149,6 +149,7 @@
      openconnect
      openssh
      openssl
+     oraclejre
      p7zip
      pass
      pavucontrol
