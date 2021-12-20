@@ -187,6 +187,7 @@
      wafw00f
      #wapiti
      waybar
+     wayvnc
      wget
      whois
      wireguard
