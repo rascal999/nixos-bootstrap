@@ -276,9 +276,12 @@
   ## VirtualBox
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "user" ];
-  # X11
+  # X11 to launch Sway ...
   services.xserver.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.displayManager.defaultSession = "none+sway";
+  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.displayManager.autoLogin.enable = true;
+  services.xserver.displayManager.autoLogin.user = "user";
   ## fonts
   fonts.fonts = with pkgs; [
     nerdfonts
