@@ -276,6 +276,8 @@
   ## VirtualBox
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "user" ];
+  # X11
+  services.xserver.enable = true;
   ## fonts
   fonts.fonts = with pkgs; [
     nerdfonts
