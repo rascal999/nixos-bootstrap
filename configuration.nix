@@ -295,9 +295,8 @@
       export XDG_RUNTIME_DIR=/tmp
       export XDG_SESSION_TYPE=wayland
 
-      sway &
-      wayvnc
-      echo "Doing some stuff"
+      /run/current-system/sw/bin/sway &
+      /run/current-system/sw/bin/wayvnc
     '';
     wantedBy = [ "multi-user.target" ];
   };
