@@ -199,6 +199,7 @@
      xlockmore
      xmind
      xorg.xbacklight
+     xorg.xeyes
      xorg.xmodmap
      xwayland
      youtube-dl
