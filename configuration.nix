@@ -278,6 +278,7 @@
   users.extraGroups.vboxusers.members = [ "user" ];
   # X11
   services.xserver.enable = true;
+  services.xserver.displayManager.sddm.enable = true;
   ## fonts
   fonts.fonts = with pkgs; [
     nerdfonts
