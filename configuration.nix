@@ -275,8 +275,6 @@
   ## VirtualBox
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "user" ];
-  ## wayvnc
-  services.wayvnc.enable = true;
   ## fonts
   fonts.fonts = with pkgs; [
     nerdfonts
