@@ -142,6 +142,7 @@
      networkmanager
      ngrep
      ngrok
+     nixos-generators
      nmap
      notify-desktop
      ntfs3g
