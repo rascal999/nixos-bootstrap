@@ -195,6 +195,7 @@
      whois
      wireguard
      wireshark-qt
+     woeusb
      wpscan
      x11docker
      x11vnc
