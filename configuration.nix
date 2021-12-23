@@ -166,6 +166,7 @@
      remmina
      rsync
      ruby
+     rubyPackages.json
      rxvt-unicode
      screen
      scrot
