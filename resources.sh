@@ -612,6 +612,12 @@ git pull
 ### Misc tools
 ###
 ###
+# nocodb
+git clone https://github.com/nocodb/nocodb.git $HOME/git/misc/nocodb
+cd $HOME/git/misc/nocodb
+git pull
+
+# awesome-stacks
 git clone https://github.com/ethibox/awesome-stacks.git $HOME/git/misc/awesome-stacks
 cd $HOME/git/misc/awesome-stacks
 git pull
