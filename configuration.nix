@@ -166,7 +166,6 @@
      remmina
      rsync
      ruby
-     rubyPackages.json
      rxvt-unicode
      screen
      scrot
@@ -183,6 +182,7 @@
      thc-hydra
      tig
      tmux
+     trufflehog
      #tor-browser-bundle-bin
      unrar
      unzip
