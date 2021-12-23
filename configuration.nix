@@ -165,6 +165,7 @@
      rdesktop
      remmina
      rsync
+     ruby
      rxvt-unicode
      screen
      scrot
