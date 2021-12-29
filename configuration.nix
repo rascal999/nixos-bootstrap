@@ -180,6 +180,7 @@
      syncthing
      testssl
      thc-hydra
+     thefuck
      tig
      tmux
      trufflehog
@@ -188,6 +189,7 @@
      unzip
      vim
      vlc
+     vue
      w3m
      wafw00f
      #wapiti
