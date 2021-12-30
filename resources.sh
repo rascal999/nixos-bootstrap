@@ -424,6 +424,11 @@ git pull
 ### TOOLS
 ###
 ###
+# SAWS
+git clone https://github.com/donnemartin/saws.git $HOME/git/pentest-tools/saws
+cd $HOME/git/pentest-tools/saws
+docker build -t saws .
+
 # cloudsploit
 git clone https://github.com/aquasecurity/cloudsploit.git $HOME/git/pentest-tools/cloudsploit
 cd $HOME/git/pentest-tools/cloudsploit
