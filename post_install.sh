@@ -28,6 +28,7 @@ docker swarm init
 echo
 echo "# Firefox"
 echo "## Plugins"
+echo "- BibItNow!"
 echo "- CanvasBlocker"
 echo "- ClearURLs"
 echo "- Dark Reader"
