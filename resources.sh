@@ -87,6 +87,7 @@ docker pull toniblyx/prowler                            # Perform AWS security a
 docker pull arkadiyt/aws_public_ips                     # Fetch all public IP addresses tied to your AWS account
 docker pull accurics/terrascan                          # Detect compliance and security violations across IaC
 docker pull bridgecrew/checkov                          # Checkov is a static code analysis tool for infrastructure-as-code
+docker pull projectdiscovery/nuclei                     # Configurable targeted scanning based on templates
 
 # hetty fs
 mkdir $HOME/.hetty
@@ -424,6 +425,11 @@ git pull
 ### TOOLS
 ###
 ###
+# pcf
+git clone https://gitlab.com/invuls/pentest-projects/pcf.git $HOME/git/pentest-tools/pcf
+cd $HOME/git/pentest-tools/pcf
+# docker-compose up
+
 # cloudsploit
 git clone https://github.com/aquasecurity/cloudsploit.git $HOME/git/pentest-tools/cloudsploit
 cd $HOME/git/pentest-tools/cloudsploit
