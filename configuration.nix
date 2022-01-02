@@ -149,6 +149,8 @@
      ntfs3g
      obsidian
      openconnect
+     opensnitch
+     opensnitch-ui
      openssh
      openssl
      p7zip
