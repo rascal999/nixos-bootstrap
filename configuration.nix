@@ -213,6 +213,7 @@
      xwayland
      youtube-dl
      zip
+     zlib
      zoom-us
      zotero
      zsh
