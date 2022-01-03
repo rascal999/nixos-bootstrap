@@ -149,6 +149,8 @@
      ntfs3g
      obsidian
      openconnect
+     opensnitch
+     opensnitch-ui
      openssh
      openssl
      p7zip
@@ -284,6 +286,8 @@
   ## VirtualBox
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "user" ];
+  # opensnitch
+  services.opensnitch.enable = true;
   # X11 to launch Sway ...
   services.xserver.enable = true;
   services.xserver.displayManager.defaultSession = "sway";
