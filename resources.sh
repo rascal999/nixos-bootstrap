@@ -144,6 +144,11 @@ wget -c https://d0.awsstatic.com/whitepapers/aws-kms-best-practices.pdf \
     -O $HOME/pdfs/education/aws/aws-kms-best-practices.pdf
 
 # GitHub
+# og-aws
+git clone https://github.com/open-guides/og-aws.git $HOME/git/education/og-aws
+cd $HOME/git/education/og-aws
+git pull
+
 # awesome-openzeppelin
 git clone https://github.com/OpenZeppelin/awesome-openzeppelin $HOME/git/education/awesome-openzeppelin
 cd $HOME/git/education/awesome-openzeppelin
