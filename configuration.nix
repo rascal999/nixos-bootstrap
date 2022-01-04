@@ -331,4 +331,4 @@
 # nvidia
 (mkIf config.networking.hostName == "nixos-rig" {
   services.xserver.videoDrivers = [ "nvidia" ];
-})];
+});
