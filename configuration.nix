@@ -190,6 +190,7 @@
      tmux
      trufflehog
      #tor-browser-bundle-bin
+     twmn
      unrar
      unzip
      vim
