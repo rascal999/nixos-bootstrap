@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   imports =
@@ -294,7 +294,7 @@
   # opensnitch
   services.opensnitch.enable = true;
   # nvidia
-  services.xserver.videoDrivers = mkIf (config.networking.hostName == "nixos-rig") [ "nvidia" ];
+  services.xserver.videoDrivers = lib.mkIf (config.networking.hostName == "nixos-rig") [ "nvidia" ];
   # X11 / i3
   services.xserver.windowManager.i3.enable = true;
   services.xserver.enable = true;
