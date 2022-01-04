@@ -295,9 +295,9 @@
   services.opensnitch.enable = true;
 
   # nvidia
-  (mkIf config.networking.hostName == "nixos-rig" {
+  mkIf config.networking.hostName == "nixos-rig" {
     services.xserver.videoDrivers = [ "nvidia" ];
-  });
+  };
   # X11 / i3
   services.xserver.windowManager.i3.enable = true;
   services.xserver.enable = true;
