@@ -120,7 +120,7 @@
      hping
      htop
      i3
-     i3status
+     i3status-rust
      inetutils
      ipcalc
      iwd
