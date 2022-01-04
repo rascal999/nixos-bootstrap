@@ -293,6 +293,7 @@
   # opensnitch
   services.opensnitch.enable = true;
   # X11 to launch Sway ...
+  windowManager.i3.enable = true;
   services.xserver.enable = true;
   services.xserver.displayManager.defaultSession = "none+i3";
   services.xserver.displayManager.lightdm.enable = true;
