@@ -292,7 +292,7 @@
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "user" ];
   # opensnitch
-  services.opensnitch.enable = true;
+  services.opensnitch.enable = false;
   # nvidia
   services.xserver.videoDrivers = lib.mkIf (config.networking.hostName == "nixos-rig") [ "nvidia" ];
   # X11 / i3
