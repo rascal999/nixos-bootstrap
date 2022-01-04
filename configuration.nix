@@ -294,7 +294,7 @@
   # opensnitch
   services.opensnitch.enable = true;
   # nvidia
-  services.xserver.videoDrivers = lib.mkIf (config.networking.hostName == "nixos-rig") [ "nvidia" ];
+  services.xserver.videoDrivers = mkIf (config.networking.hostName == "nixos-rig") [ "nvidia" ];
   # X11 / i3
   services.xserver.windowManager.i3.enable = true;
   services.xserver.enable = true;
