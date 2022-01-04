@@ -293,6 +293,11 @@
   users.extraGroups.vboxusers.members = [ "user" ];
   # opensnitch
   services.opensnitch.enable = true;
+
+  # nvidia
+  (mkIf config.networking.hostName == "nixos-rig" {
+    services.xserver.videoDrivers = [ "nvidia" ];
+  });
   # X11 / i3
   services.xserver.windowManager.i3.enable = true;
   services.xserver.enable = true;
@@ -327,8 +332,3 @@
   system.stateVersion = "21.11"; # Did you read the comment?
 
 }
-
-# nvidia
-(mkIf config.networking.hostName == "nixos-rig" {
-  services.xserver.videoDrivers = [ "nvidia" ];
-});
