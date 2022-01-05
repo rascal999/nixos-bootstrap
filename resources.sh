@@ -430,6 +430,10 @@ git pull
 ### TOOLS
 ###
 ###
+# arjun
+cd $HOME/git/nixos-bootstrap/resources/docker/arjun
+docker build . -t arjun
+
 # pcf
 git clone https://gitlab.com/invuls/pentest-projects/pcf.git $HOME/git/pentest-tools/pcf
 cd $HOME/git/pentest-tools/pcf
