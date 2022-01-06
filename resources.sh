@@ -509,6 +509,7 @@ git pull
 git clone https://github.com/smicallef/spiderfoot.git $HOME/git/pentest-tools/spiderfoot
 cd $HOME/git/pentest-tools/spiderfoot
 git pull
+docker build . -t spiderfoot
 
 # rengine
 git clone https://github.com/yogeshojha/rengine.git $HOME/git/pentest-tools/rengine
