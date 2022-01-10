@@ -430,6 +430,9 @@ git pull
 ### TOOLS
 ###
 ###
+git clone https://github.com/Nightbringer21/fridump.git $HOME/git/pentest-tools/fridump
+cd $HOME/git/pentest-tools/fridump
+
 # arjun
 cd $HOME/git/nixos-bootstrap/resources/docker/arjun
 docker build . -t arjun
