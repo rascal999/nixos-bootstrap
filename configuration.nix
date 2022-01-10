@@ -104,6 +104,7 @@
      firefox
      flameshot
      fzf
+     genymotion
      gimp
      git
      gitleaks
