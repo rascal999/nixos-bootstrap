@@ -179,6 +179,7 @@
      scrot
      sddm
      signal-desktop
+     slack
      sqlite-web
      sqlmap
      sshfs
