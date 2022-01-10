@@ -72,6 +72,7 @@
   environment.systemPackages = with pkgs; [
      acpi
      android-studio
+     android-tools
      appimage-run
      asciinema
      awscli
