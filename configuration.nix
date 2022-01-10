@@ -71,6 +71,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
      acpi
+     apktool
      android-studio
      android-tools
      appimage-run
