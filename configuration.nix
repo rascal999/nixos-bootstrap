@@ -71,6 +71,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
      acpi
+     android-studio
      appimage-run
      asciinema
      awscli
