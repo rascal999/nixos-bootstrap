@@ -88,6 +88,38 @@ docker pull arkadiyt/aws_public_ips                     # Fetch all public IP ad
 docker pull accurics/terrascan                          # Detect compliance and security violations across IaC
 docker pull bridgecrew/checkov                          # Checkov is a static code analysis tool for infrastructure-as-code
 docker pull projectdiscovery/nuclei                     # Configurable targeted scanning based on templates
+# https://github.com/cybersecsi/RAUDI
+docker pull secsi/apktool        
+docker pull secsi/bfac           
+docker pull secsi/dirb           
+docker pull secsi/dirhunt        
+docker pull secsi/dirsearch      
+docker pull secsi/dnscan         
+#docker pull secsi/eyewitness     
+docker pull secsi/ffuf           
+docker pull secsi/fierce         
+docker pull secsi/findsploit     
+docker pull secsi/gitrob         
+docker pull secsi/gittools       
+docker pull secsi/gobuster       
+docker pull secsi/hydra          
+docker pull secsi/jwt_tool       
+docker pull secsi/knockpy        
+docker pull secsi/lfisuite       
+docker pull secsi/masscan        
+docker pull secsi/massdns        
+#docker pull secsi/nikto          
+docker pull secsi/nmap           
+docker pull secsi/puredns        
+docker pull secsi/race-the-web   
+docker pull secsi/restfulharvest 
+docker pull secsi/retire         
+docker pull secsi/sandcastle     
+docker pull secsi/sqlmap         
+docker pull secsi/sublist3r      
+docker pull secsi/theharvester   
+docker pull secsi/waybackpy      
+docker pull secsi/whatweb
 
 # hetty fs
 mkdir $HOME/.hetty
