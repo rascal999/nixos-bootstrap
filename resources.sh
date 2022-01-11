@@ -430,6 +430,14 @@ git pull
 ### TOOLS
 ###
 ###
+# RAUDI
+git clone https://github.com/cybersecsi/RAUDI $HOME/git/pentest-tools/RAUDI
+cd $HOME/git/pentest-tools/RAUDI
+python -m venv .
+source bin/activate
+pip install -r requirements.txt
+python3 ./raudi.py --all
+
 # frida
 mkdir -p $HOME/venv/pentest-tools/frida
 cd $HOME/venv/pentest-tools/frida
