@@ -430,6 +430,15 @@ git pull
 ### TOOLS
 ###
 ###
+# frida
+mkdir -p $HOME/venv/pentest-tools/frida
+cd $HOME/venv/pentest-tools/frida
+python -m venv .
+source bin/activate
+pip install frida
+pip install frida-tools
+
+# fridump
 git clone https://github.com/Nightbringer21/fridump.git $HOME/git/pentest-tools/fridump
 cd $HOME/git/pentest-tools/fridump
 
