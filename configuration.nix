@@ -162,6 +162,7 @@
      openssh
      openssl
      p7zip
+     pandoc
      pass
      pavucontrol
      pciutils
