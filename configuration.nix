@@ -106,6 +106,7 @@
      firectl
      firefox
      flameshot
+     fswebcam
      fzf
      genymotion
      gimp
