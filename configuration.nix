@@ -274,6 +274,8 @@
   # Touchpad
   services.xserver.synaptics.enable = true;
   services.xserver.synaptics.vertTwoFingerScroll = true;
+  services.xserver.synaptics.palmDetect = true;
+  services.xserver.synaptics.minSpeed = "1.5";
   ## Bluetooth
   hardware.bluetooth.enable = true;
   services.blueman.enable = true;
