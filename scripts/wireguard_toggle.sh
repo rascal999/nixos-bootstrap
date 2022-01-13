@@ -5,8 +5,8 @@ CONNECTION=`nmcli con show --active | head -2 | grep -v "NAME.*UUID" | gawk '{ p
 
 if [[ "$STATUS" == "1" ]]; then
     nmcli connection down wg0
-    nmcli connection down $CONNECTION
-    nmcli connection up $CONNECTION
+    nmcli connection down "$CONNECTION"
+    nmcli connection up "$CONNECTION"
 else
     nmcli connection up wg0
 fi
