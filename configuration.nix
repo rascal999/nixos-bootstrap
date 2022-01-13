@@ -271,6 +271,8 @@
   ###
   # Custom
   ###
+  # For WireGuard
+  networking.firewall.checkReversePath = false;
   # Touchpad
   services.xserver.synaptics.enable = true;
   services.xserver.synaptics.vertTwoFingerScroll = true;
