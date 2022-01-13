@@ -1,6 +1,22 @@
 #!/usr/bin/env bash
 
+function confirm_hostname() {
+    while true; do
+        read -p "Does this look right? [Yn] " yn
+        case $yn in
+            [Yy]* ) break;;
+            [Nn]* ) exit 1;;
+            * ) break;;
+        esac
+    done
+}
+
 echo "### NixOS bootstrap script"
+echo
+
+# Confirm hostname
+cat hostname.nix | grep hostName
+confirm_hostname
 
 # Just in case
 sudo umount /mnt/boot
@@ -54,6 +70,7 @@ sudo mount ${DISK}${BOOT_PARTITION} /mnt/boot
 # NixOS config
 sudo nixos-generate-config --root /mnt
 sudo cp /mnt/etc/nixos/configuration.nix /mnt/etc/nixos/configuration.nix.backup
+sudo cp hostname.nix /mnt/etc/nixos/hostname.nix
 sudo cp configuration.nix /mnt/etc/nixos/configuration.nix
 
 # NixOS install
