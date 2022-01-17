@@ -7,6 +7,8 @@ if [[ "$STATUS" == "1" ]]; then
     nmcli connection down wg0
     nmcli connection down $CONNECTION
     nmcli connection up $CONNECTION
+    i3-msg "restart"
 else
     nmcli connection up wg0
+    i3-msg "restart"
 fi
