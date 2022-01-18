@@ -196,6 +196,7 @@
      tig
      tmux
      trufflehog
+     tor
      tor-browser-bundle-bin
      twmn
      unrar
