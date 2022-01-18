@@ -88,6 +88,8 @@ docker pull arkadiyt/aws_public_ips                     # Fetch all public IP ad
 docker pull accurics/terrascan                          # Detect compliance and security violations across IaC
 docker pull bridgecrew/checkov                          # Checkov is a static code analysis tool for infrastructure-as-code
 docker pull projectdiscovery/nuclei                     # Configurable targeted scanning based on templates
+docker pull kizzx2/wireguard-socks-proxy                # Expose a WireGuard tunnel as a SOCKS5 proxy
+docker pull dperson/torproxy                            # Tor and Privoxy docker container
 # https://github.com/cybersecsi/RAUDI
 docker pull secsi/apktool        
 docker pull secsi/bfac           
