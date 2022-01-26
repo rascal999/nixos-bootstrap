@@ -306,6 +306,7 @@
   virtualisation.docker.enableOnBoot = true;
   virtualisation.docker.liveRestore = false;
   virtualisation.docker.enableNvidia = true;
+  hardware.opengl.driSupport32Bit = true;
   ## VirtualBox
   virtualisation.virtualbox.host.enable = true;
   users.extraGroups.vboxusers.members = [ "user" ];
