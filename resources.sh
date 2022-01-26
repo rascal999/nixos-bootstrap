@@ -711,6 +711,10 @@ git clone https://github.com/six2dez/OneListForAll.git $HOME/git/wordlists/OneLi
 cd $HOME/git/wordlists/OneListForAll
 git pull
 
+git clone https://github.com/v0re/dirb.git $HOME/git/wordlists/dirb
+cd $HOME/git/wordlists/dirb
+git pull
+
 # ISOs / VMs
 #mkdir $HOME/VMs
 #wget https://az792536.vo.msecnd.net/vms/VMBuild_20190311/VirtualBox/MSEdge/MSEdge.Win10.VirtualBox.zip -o $HOME/VMs/MSEdge.Win10.VirtualBox.zip
