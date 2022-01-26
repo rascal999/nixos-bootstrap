@@ -163,6 +163,7 @@
      opensnitch-ui
      openssh
      openssl
+     openvpn
      p7zip
      pandoc
      pass
