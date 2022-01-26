@@ -108,6 +108,7 @@
      flameshot
      fswebcam
      fzf
+     gcc
      genymotion
      gimp
      git
