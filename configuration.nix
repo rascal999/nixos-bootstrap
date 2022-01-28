@@ -306,7 +306,7 @@
   virtualisation.docker.enable = true;
   virtualisation.docker.enableOnBoot = true;
   virtualisation.docker.liveRestore = false;
-  virtualisation.docker.enableNvidia = true;
+  virtualisation.docker.enableNvidia = lib.mkIf (config.networking.hostName == "nixos-rig") true;
   hardware.opengl.driSupport32Bit = lib.mkIf (config.networking.hostName == "nixos-rig") true;
   systemd.enableUnifiedCgroupHierarchy = false;
   ## VirtualBox
