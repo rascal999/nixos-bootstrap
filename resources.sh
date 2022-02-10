@@ -90,6 +90,7 @@ docker pull bridgecrew/checkov                          # Checkov is a static co
 docker pull projectdiscovery/nuclei                     # Configurable targeted scanning based on templates
 docker pull kizzx2/wireguard-socks-proxy                # Expose a WireGuard tunnel as a SOCKS5 proxy
 docker pull dperson/torproxy                            # Tor and Privoxy docker container
+docker pull cmnatic/rustscan                            # The Modern Port Scanner
 # https://github.com/cybersecsi/RAUDI
 docker pull secsi/apktool        
 docker pull secsi/bfac           
