@@ -695,6 +695,15 @@ git pull
 
 ###
 ###
+### Exploits
+###
+###
+git clone https://github.com/berdav/CVE-2021-4034 $HOME/git/misc/CVE-2021-4034
+cd $HOME/git/misc/CVE-2021-4034
+git pull
+
+###
+###
 ### Wordlists
 ###
 ###
