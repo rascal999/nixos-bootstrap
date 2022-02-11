@@ -673,6 +673,12 @@ git clone https://github.com/vishnudxb/automated-pentest.git $HOME/git/pentest-t
 cd $HOME/git/pentest-tools/automated-pentest
 git pull
 
+# wapiti
+git clone https://github.com/wapiti-scanner/wapiti.git $HOME/git/pentest-tools/wapiti
+cd $HOME/git/pentest-tools/wapiti
+docker build . -t wapiti
+git pull
+
 # w3af
 git clone --depth 1 https://github.com/andresriancho/w3af.git $HOME/git/pentest-tools/w3af
 cd $HOME/git/pentest-tools/w3af
