@@ -14,5 +14,5 @@ tmux new-session -d -s fscan_right
 tmux split-window -v -p 33 -t fscan_right:0.0
 tmux split-window -v -p 50 -t fscan_right:0.0
 tmux send-keys -t fscan_right:0.0 "d-nmap -sU -T5 $IP" Enter
-tmux send-keys -t fscan_right:0.1 "d-whatweb $URL" Enter
+tmux send-keys -t fscan_right:0.1 "d-nikto $URL" Enter
 tmux attach-session -t fscan_right
