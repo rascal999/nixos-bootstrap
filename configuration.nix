@@ -302,6 +302,9 @@
   services.gnome.gnome-keyring.enable = true;
   ## For Obsidian
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-13.6.9"
+  ]
   ## docker
   virtualisation.docker.enable = true;
   virtualisation.docker.enableOnBoot = true;
