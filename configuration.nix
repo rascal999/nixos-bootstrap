@@ -304,7 +304,7 @@
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.permittedInsecurePackages = [
     "electron-13.6.9"
-  ]
+  ];
   ## docker
   virtualisation.docker.enable = true;
   virtualisation.docker.enableOnBoot = true;
