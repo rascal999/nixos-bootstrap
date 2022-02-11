@@ -12,7 +12,7 @@ URL=$2
 tmux kill-session -t fscan_left
 tmux new-session -d -s fscan_left
 tmux split-window -v -p 33 -t fscan_left:0.0
-tmux split-window -v -p 50 -t fscan_left:0.1
+tmux split-window -v -p 50 -t fscan_left:0.0
 tmux send-keys -t fscan_left:0.0 "d-rustscan $IP" Enter
 tmux send-keys -t fscan_left:0.1 "d-dirb $URL" Enter
 tmux send-keys -t fscan_left:0.2 "d-whatweb $URL" Enter
