@@ -24,12 +24,22 @@ function docker_pull_prompt() {
     done
 }
 
-# Prompts
+function git_update() {
+  git clone $1 $2
+  cd $2
+  git pull
+}  
+
+###
+### Prompts
+###
 docker_login_prompt
 docker_pull_prompt booyaabes/kali-linux-full docker_pull-kali-linux-full
 docker_pull_prompt firefart/dockerctf docker_pull-dockerctf          # Docker image with some common ctf tools
 
-# Operating Systems
+###
+### Operating Systems
+###
 docker pull alpine
 docker pull ubuntu
 docker pull centos
@@ -38,7 +48,9 @@ docker pull amazonlinux
 docker pull fedora
 #docker pull kalilinux/kali-rolling
 
-# Other stuff
+###
+### Other stuff
+###
 docker pull trufflesuite/ganache-cli                    # Local blockchain dev
 docker pull owasp/zap2docker-stable                     # official OWASP ZAP
 docker pull wpscanteam/wpscan                           # official WPScan
@@ -91,7 +103,10 @@ docker pull projectdiscovery/nuclei                     # Configurable targeted 
 docker pull kizzx2/wireguard-socks-proxy                # Expose a WireGuard tunnel as a SOCKS5 proxy
 docker pull dperson/torproxy                            # Tor and Privoxy docker container
 docker pull cmnatic/rustscan                            # The Modern Port Scanner
-# https://github.com/cybersecsi/RAUDI
+
+###
+### https://github.com/cybersecsi/RAUDI
+###
 docker pull secsi/apktool        
 docker pull secsi/bfac           
 docker pull secsi/dirb           
@@ -128,9 +143,7 @@ docker pull secsi/whatweb
 mkdir $HOME/.hetty
 
 ###
-###
 ### Education
-###
 ###
 
 # PDFs
@@ -179,295 +192,102 @@ wget -c https://d1.awsstatic.com/whitepapers/Security/security-at-the-edge.pdf \
 wget -c https://d0.awsstatic.com/whitepapers/aws-kms-best-practices.pdf \
     -O $HOME/pdfs/education/aws/aws-kms-best-practices.pdf
 
-# GitHub
-# og-aws
-git clone https://github.com/open-guides/og-aws.git $HOME/git/education/og-aws
-cd $HOME/git/education/og-aws
-git pull
-
-# awesome-openzeppelin
-git clone https://github.com/OpenZeppelin/awesome-openzeppelin $HOME/git/education/awesome-openzeppelin
-cd $HOME/git/education/awesome-openzeppelin
-git pull
-
-# full-blockchain-solidity-course-py
-git clone https://github.com/smartcontractkit/full-blockchain-solidity-course-py $HOME/git/education/full-blockchain-solidity-course-py
-cd $HOME/git/education/full-blockchain-solidity-course-py
-git pull
-
-# awesome-tunneling
-git clone https://github.com/anderspitman/awesome-tunneling $HOME/git/education/awesome-tunneling
-cd $HOME/git/education/awesome-tunneling
-git pull
-
-# smart-contract-best-practices
-git clone https://github.com/ConsenSys/smart-contract-best-practices.git $HOME/git/education/smart-contract-best-practices
-cd $HOME/git/education/smart-contract-best-practices
-git pull
-
-# papers-we-love
-git clone https://github.com/papers-we-love/papers-we-love.git $HOME/git/education/papers-we-love
-cd $HOME/git/education/papers-we-love
-git pull
-
-# public-apis
-git clone https://github.com/public-apis/public-apis.git $HOME/git/education/public-apis
-cd $HOME/git/education/public-apis
-git pull
-
-# awesome
-git clone https://github.com/sindresorhus/awesome.git $HOME/git/education/awesome
-cd $HOME/git/education/free-programming-books
-git pull
-
-# free-programming-books
-git clone https://github.com/EbookFoundation/free-programming-books.git $HOME/git/education/free-programming-books
-cd $HOME/git/education/free-programming-books
-git pull
-
-# coding-interview-university
-git clone https://github.com/jwasham/coding-interview-university.git $HOME/git/education/coding-interview-university
-cd $HOME/git/education/coding-interview-university
-git pull
-
-# awesome-selfhosted
-git clone https://github.com/awesome-selfhosted/awesome-selfhosted.git $HOME/git/education/awesome-selfhosted
-cd $HOME/git/education/awesome-selfhosted
-git pull
-
-# awesome-docker
-git clone https://github.com/veggiemonk/awesome-docker.git $HOME/git/education/awesome-docker
-cd $HOME/git/education/awesome-docker
-git pull
-
-# awesome-interview-questions
-git clone https://github.com/DopplerHQ/awesome-interview-questions.git $HOME/git/education/awesome-interview-questions
-cd $HOME/git/education/awesome-interview-questions
-git pull
-
 ###
+### GitHub
+###
+git_update https://github.com/open-guides/og-aws.git $HOME/git/education/og-aws
+git_update https://github.com/OpenZeppelin/awesome-openzeppelin $HOME/git/education/awesome-openzeppelin
+git_update https://github.com/smartcontractkit/full-blockchain-solidity-course-py $HOME/git/education/full-blockchain-solidity-course-py
+git_update https://github.com/anderspitman/awesome-tunneling $HOME/git/education/awesome-tunneling
+git_update https://github.com/ConsenSys/smart-contract-best-practices.git $HOME/git/education/smart-contract-best-practices
+git_update https://github.com/papers-we-love/papers-we-love.git $HOME/git/education/papers-we-love
+git_update https://github.com/public-apis/public-apis.git $HOME/git/education/public-apis
+git_update https://github.com/sindresorhus/awesome.git $HOME/git/education/awesome
+git_update https://github.com/EbookFoundation/free-programming-books.git $HOME/git/education/free-programming-books
+git_update https://github.com/jwasham/coding-interview-university.git $HOME/git/education/coding-interview-university
+git_update https://github.com/awesome-selfhosted/awesome-selfhosted.git $HOME/git/education/awesome-selfhosted
+git_update https://github.com/veggiemonk/awesome-docker.git $HOME/git/education/awesome-docker
+git_update https://github.com/DopplerHQ/awesome-interview-questions.git $HOME/git/education/awesome-interview-questions
+
 ###
 ### Pentest Education
 ###
-###
-# my-arsenal-of-aws-security-tools
-git clone https://github.com/toniblyx/my-arsenal-of-aws-security-tools.git $HOME/git/education/my-arsenal-of-aws-security-tools
-cd $HOME/git/education/my-arsenal-of-aws-security-tools
-git pull
+git_update https://github.com/toniblyx/my-arsenal-of-aws-security-tools.git $HOME/git/education/my-arsenal-of-aws-security-tools
+git_update https://github.com/jassics/awesome-aws-security.git $HOME/git/education/awesome-aws-security
+git_update https://github.com/mytechnotalent/Reverse-Engineering.git $HOME/git/pentest-education/Reverse-Engineering
+git_update https://github.com/sundowndev/hacker-roadmap.git $HOME/git/pentest-education/hacker-roadmap
+git_update https://github.com/OWASP/owasp-mstg.git $HOME/git/pentest-education/owasp-mstg
+git_update https://github.com/The-Art-of-Hacking/h4cker.git $HOME/git/pentest-education/h4cker
+git_update https://github.com/vitalysim/Awesome-Hacking-Resources.git $HOME/git/pentest-education/Awesome-Hacking-Resources
+git_update https://github.com/mantvydasb/RedTeam-Tactics-and-Techniques.git $HOME/git/pentest-education/RedTeam-Tactics-and-Techniques
+git_update https://github.com/irsdl/top10webseclist.git $HOME/git/pentest-education/top10webseclist
+git_update https://github.com/carpedm20/awesome-hacking.git $HOME/git/pentest-education/awesome-hacking
+git_update https://github.com/ashishb/android-security-awesome.git $HOME/git/pentest-education/android-security-awesome
+git_update https://github.com/apsdehal/awesome-ctf.git $HOME/git/pentest-education/awesome-ctf
+git_update https://github.com/arainho/awesome-api-security.git $HOME/git/pentest-education/awesome-api-security
+git_update https://github.com/S3cur3Th1sSh1t/Pentest-Tools.git $HOME/git/pentest-education/Pentest-Tools
+git_update https://github.com/coreb1t/awesome-pentest-cheat-sheets.git $HOME/git/pentest-education/awesome-pentest-cheat-sheets
+git_update https://github.com/Kitsun3Sec/Pentest-Cheat-Sheets.git $HOME/git/pentest-education/Pentest-Cheat-Sheets
+git_update https://github.com/qazbnm456/awesome-web-security.git $HOME/git/pentest-education/awesome-web-security
+git_update https://github.com/paralax/awesome-honeypots.git $HOME/git/pentest-education/awesome-honeypots
+git_update https://github.com/paragonie/awesome-appsec.git $HOME/git/pentest-education/awesome-appsec
+git_update https://github.com/eon01/DockerCheatSheet.git $HOME/git/pentest-education/DockerCheatSheet
+git_update https://github.com/vaib25vicky/awesome-mobile-security.git $HOME/git/pentest-education/awesome-mobile-security
+git_update https://github.com/GrrrDog/Java-Deserialization-Cheat-Sheet.git $HOME/git/pentest-education/Java-Deserialization-Cheat-Sheet
+git_update https://github.com/ihebski/DefaultCreds-cheat-sheet.git $HOME/git/pentest-education/DefaultCreds-cheat-sheet
+git_update https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet.git $HOME/git/pentest-education/Active-Directory-Exploitation-Cheat-Sheet
+git_update https://github.com/jakejarvis/awesome-shodan-queries.git $HOME/git/pentest-education/awesome-shodan-queries
+git_update https://github.com/OlivierLaflamme/Cheatsheet-God.git $HOME/git/pentest-education/Cheatsheet-God
+git_update https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE.git $HOME/git/pentest-education/PENTESTING-BIBLE
+git_update https://github.com/sinfulz/JustTryHarder.git $HOME/git/pentest-education/JustTryHarder
+git_update https://github.com/offensive-security/exploitdb.git $HOME/git/pentest-education/exploitdb
+git_update https://github.com/Muhammd/Awesome-Pentest.git $HOME/git/pentest-education/Awesome-Pentest
+git_update https://github.com/sbilly/awesome-security.git $HOME/git/pentest-education/awesome-security
+git_update https://github.com/trimstray/test-your-sysadmin-skills.git $HOME/git/pentest-education/test-your-sysadmin-skills
+git_update https://github.com/docker/labs.git $HOME/git/pentest-education/docker-labs
+git_update https://github.com/imthenachoman/How-To-Secure-A-Linux-Server.git $HOME/git/pentest-education/How-To-Secure-A-Linux-Server
+git_update https://github.com/Hacker0x01/hacker101.git $HOME/git/pentest-education/hacker101
+git_update https://github.com/shieldfy/API-Security-Checklist.git $HOME/git/pentest-education/API-Security-Checklist
+git_update https://github.com/OWASP/CheatSheetSeries.git $HOME/git/pentest-education/CheatSheetSeries
+git_update https://github.com/swisskyrepo/PayloadsAllTheThings.git $HOME/git/pentest-education/PayloadsAllTheThings
+git_update https://github.com/enaqx/awesome-pentest.git $HOME/git/pentest-education/awesome-pentest
+git_update https://github.com/bayandin/awesome-awesomeness.git $HOME/git/pentest-education/awesome-awesomeness
+git_update https://github.com/trimstray/the-book-of-secret-knowledge.git $HOME/git/pentest-education/the-book-of-secret-knowledge
+git_update https://github.com/Hack-with-Github/Awesome-Hacking.git $HOME/git/pentest-education/Awesome-Hacking
 
-# awesome-aws-security
-git clone https://github.com/jassics/awesome-aws-security.git $HOME/git/education/awesome-aws-security
-cd $HOME/git/education/awesome-aws-security
-git pull
-
-# Reverse-Engineering
-git clone https://github.com/mytechnotalent/Reverse-Engineering.git $HOME/git/pentest-education/Reverse-Engineering
-cd $HOME/git/pentest-education/Reverse-Engineering
-git pull
-
-# hacker-roadmap
-git clone https://github.com/sundowndev/hacker-roadmap.git $HOME/git/pentest-education/hacker-roadmap
-cd $HOME/git/pentest-education/hacker-roadmap
-git pull
-
-# owasp-mstg
-git clone https://github.com/OWASP/owasp-mstg.git $HOME/git/pentest-education/owasp-mstg
-cd $HOME/git/pentest-education/owasp-mstg
-git pull
-
-# h4cker
-git clone https://github.com/The-Art-of-Hacking/h4cker.git $HOME/git/pentest-education/h4cker
-cd $HOME/git/pentest-education/h4cker
-git pull
-
-# Awesome-Hacking-Resources
-git clone https://github.com/vitalysim/Awesome-Hacking-Resources.git $HOME/git/pentest-education/Awesome-Hacking-Resources
-cd $HOME/git/pentest-education/Awesome-Hacking-Resources
-git pull
-
-# RedTeam-Tactics-and-Techniques
-git clone https://github.com/mantvydasb/RedTeam-Tactics-and-Techniques.git $HOME/git/pentest-education/RedTeam-Tactics-and-Techniques
-cd $HOME/git/pentest-education/RedTeam-Tactics-and-Techniques
-git pull
-
-# top10webseclist
-git clone https://github.com/irsdl/top10webseclist.git $HOME/git/pentest-education/top10webseclist
-cd $HOME/git/pentest-education/top10webseclist
-git pull
-
-# awesome-hacking
-git clone https://github.com/carpedm20/awesome-hacking.git $HOME/git/pentest-education/awesome-hacking
-cd $HOME/git/pentest-education/awesome-hacking
-git pull
-
-# android-security-awesome
-git clone https://github.com/ashishb/android-security-awesome.git $HOME/git/pentest-education/android-security-awesome
-cd $HOME/git/pentest-education/android-security-awesome
-git pull
-
-# awesome-ctf
-git clone https://github.com/apsdehal/awesome-ctf.git $HOME/git/pentest-education/awesome-ctf
-cd $HOME/git/pentest-education/awesome-ctf
-git pull
-
-# awesome-api-security
-git clone https://github.com/arainho/awesome-api-security.git $HOME/git/pentest-education/awesome-api-security
-cd $HOME/git/pentest-education/awesome-api-security
-git pull
-
-# Pentest-Tools
-git clone https://github.com/S3cur3Th1sSh1t/Pentest-Tools.git $HOME/git/pentest-education/Pentest-Tools
-cd $HOME/git/pentest-education/Pentest-Tools
-git pull
-
-# awesome-pentest-cheat-sheets
-git clone https://github.com/coreb1t/awesome-pentest-cheat-sheets.git $HOME/git/pentest-education/awesome-pentest-cheat-sheets
-cd $HOME/git/pentest-education/awesome-pentest-cheat-sheets
-git pull
-
-# Pentest-Cheat-Sheets
-git clone https://github.com/Kitsun3Sec/Pentest-Cheat-Sheets.git $HOME/git/pentest-education/Pentest-Cheat-Sheets
-cd $HOME/git/pentest-education/Pentest-Cheat-Sheets
-git pull
-
-# awesome-web-security
-git clone https://github.com/qazbnm456/awesome-web-security.git $HOME/git/pentest-education/awesome-web-security
-cd $HOME/git/pentest-education/awesome-web-security
-git pull
-
-# awesome-honeypots
-git clone https://github.com/paralax/awesome-honeypots.git $HOME/git/pentest-education/awesome-honeypots
-cd $HOME/git/pentest-education/awesome-honeypots
-git pull
-
-# awesome-appsec
-git clone https://github.com/paragonie/awesome-appsec.git $HOME/git/pentest-education/awesome-appsec
-cd $HOME/git/pentest-education/awesome-appsec
-git pull
-
-# DockerCheatSheet
-git clone https://github.com/eon01/DockerCheatSheet.git $HOME/git/pentest-education/DockerCheatSheet
-cd $HOME/git/pentest-education/DockerCheatSheet
-git pull
-
-# awesome-mobile-security
-git clone https://github.com/vaib25vicky/awesome-mobile-security.git $HOME/git/pentest-education/awesome-mobile-security
-cd $HOME/git/pentest-education/awesome-mobile-security
-git pull
-
-# Java-Deserialization-Cheat-Sheet
-git clone https://github.com/GrrrDog/Java-Deserialization-Cheat-Sheet.git $HOME/git/pentest-education/Java-Deserialization-Cheat-Sheet
-cd $HOME/git/pentest-education/Java-Deserialization-Cheat-Sheet
-git pull
-
-# DefaultCreds-cheat-sheet
-git clone https://github.com/ihebski/DefaultCreds-cheat-sheet.git $HOME/git/pentest-education/DefaultCreds-cheat-sheet
-cd $HOME/git/pentest-education/DefaultCreds-cheat-sheet
-git pull
-
-# Active-Directory-Exploitation-Cheat-Sheet
-git clone https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet.git $HOME/git/pentest-education/Active-Directory-Exploitation-Cheat-Sheet
-cd $HOME/git/pentest-education/Active-Directory-Exploitation-Cheat-Sheet
-git pull
-
-# awesome-shodan-queries
-git clone https://github.com/jakejarvis/awesome-shodan-queries.git $HOME/git/pentest-education/awesome-shodan-queries
-cd $HOME/git/pentest-education/awesome-shodan-queries
-git pull
-
-# Cheatsheet-God
-git clone https://github.com/OlivierLaflamme/Cheatsheet-God.git $HOME/git/pentest-education/Cheatsheet-God
-cd $HOME/git/pentest-education/Cheatsheet-God
-git pull
-
-# PENTESTING-BIBLE
-git clone https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE.git $HOME/git/pentest-education/PENTESTING-BIBLE
-cd $HOME/git/pentest-education/PENTESTING-BIBLE
-git pull
-
-# JustTryHarder
-git clone https://github.com/sinfulz/JustTryHarder.git $HOME/git/pentest-education/JustTryHarder
-cd $HOME/git/pentest-education/JustTryHarder
-git pull
-
-# exploitdb
-git clone https://github.com/offensive-security/exploitdb.git $HOME/git/pentest-education/exploitdb
-cd $HOME/git/pentest-education/exploitdb
-git pull
-
-# Awesome-Pentest
-git clone https://github.com/Muhammd/Awesome-Pentest.git $HOME/git/pentest-education/Awesome-Pentest
-cd $HOME/git/pentest-education/Awesome-Pentest
-git pull
-
-# awesome-security
-git clone https://github.com/sbilly/awesome-security.git $HOME/git/pentest-education/awesome-security
-cd $HOME/git/pentest-education/awesome-security
-git pull
-
-# test-your-sysadmin-skills
-git clone https://github.com/trimstray/test-your-sysadmin-skills.git $HOME/git/pentest-education/test-your-sysadmin-skills
-cd $HOME/git/pentest-education/test-your-sysadmin-skills
-git pull
-
-# docker-labs
-git clone https://github.com/docker/labs.git $HOME/git/pentest-education/docker-labs
-cd $HOME/git/pentest-education/docker-labs
-git pull
-
-# How-To-Secure-A-Linux-Server
-git clone https://github.com/imthenachoman/How-To-Secure-A-Linux-Server.git $HOME/git/pentest-education/How-To-Secure-A-Linux-Server
-cd $HOME/git/pentest-education/How-To-Secure-A-Linux-Server
-git pull
-
-# hacker101
-git clone https://github.com/Hacker0x01/hacker101.git $HOME/git/pentest-education/hacker101
-cd $HOME/git/pentest-education/hacker101
-git pull
-
-# API-Security-Checklist
-git clone https://github.com/shieldfy/API-Security-Checklist.git $HOME/git/pentest-education/API-Security-Checklist
-cd $HOME/git/pentest-education/API-Security-Checklist
-git pull
-
-# CheatSheetSeries
-git clone https://github.com/OWASP/CheatSheetSeries.git $HOME/git/pentest-education/CheatSheetSeries
-cd $HOME/git/pentest-education/CheatSheetSeries
-git pull
-
-# PayloadsAllTheThings
-git clone https://github.com/swisskyrepo/PayloadsAllTheThings.git $HOME/git/pentest-education/PayloadsAllTheThings
-cd $HOME/git/pentest-education/PayloadsAllTheThings
-git pull
-
-# awesome-pentest
-git clone https://github.com/enaqx/awesome-pentest.git $HOME/git/pentest-education/awesome-pentest
-cd $HOME/git/pentest-education/awesome-pentest
-git pull
-
-# awesome-awesomeness
-git clone https://github.com/bayandin/awesome-awesomeness.git $HOME/git/pentest-education/awesome-awesomeness
-cd $HOME/git/pentest-education/awesome-awesomeness
-git pull
-
-# the-book-of-secret-knowledge
-git clone https://github.com/trimstray/the-book-of-secret-knowledge.git $HOME/git/pentest-education/the-book-of-secret-knowledge
-cd $HOME/git/pentest-education/the-book-of-secret-knowledge
-git pull
-
-# Awesome-Hacking
-git clone https://github.com/Hack-with-Github/Awesome-Hacking.git $HOME/git/pentest-education/Awesome-Hacking
-cd $HOME/git/pentest-education/Awesome-Hacking
-git pull
-
-###
 ###
 ### TOOLS
 ###
-###
+git_update https://github.com/crawlab-team/crawlab.git $HOME/git/pentest-tools/crawlab
+git_update https://github.com/epi052/feroxbuster.git $HOME/git/pentest-tools/feroxbuster
+git_update https://github.com/flipkart-incubator/Astra.git $HOME/git/pentest-tools/Astra
+git_update https://github.com/pwndoc/pwndoc.git $HOME/git/pentest-tools/pwndoc
+git_update https://github.com/gwen001/pentest-tools.git $HOME/git/pentest-tools/gwen001-pentest-tools
+git_update https://github.com/ethibox/awesome-stacks.git $HOME/git/pentest-tools/awesome-stacks
+git_update https://github.com/portainer/portainer $HOME/git/pentest-tools/portainer
+git_update https://github.com/LasCC/Hack-Tools.git $HOME/git/pentest-tools/Hack-Tools
+git_update https://github.com/yogeshojha/rengine.git $HOME/git/pentest-tools/rengine
+git_update https://github.com/commixproject/commix.git $HOME/git/pentest-tools/commix
+git_update https://github.com/qeeqbox/social-analyzer.git $HOME/git/pentest-tools/social-analyzer
+git_update https://github.com/zaproxy/zaproxy.git $HOME/git/pentest-tools/zaproxy
+git_update https://github.com/carlospolop/PEASS-ng.git $HOME/git/pentest-tools/PEASS-ng
+git_update https://github.com/techgaun/github-dorks.git $HOME/git/pentest-tools/github-dorks
+git_update https://github.com/maK-/parameth.git $HOME/git/pentest-tools/parameth
+git_update https://github.com/Sh1Yo/x8 $HOME/git/pentest-tools/x8
+git_update https://github.com/vishnudxb/automated-pentest.git $HOME/git/pentest-tools/automated-pentest
+#git_update --depth 1 https://github.com/andresriancho/w3af.git $HOME/git/pentest-tools/w3af
+git_update https://github.com/carlospolop/hacktricks.git $HOME/git/pentest-tools/hacktricks
+git_update https://gitlab.com/invuls/pentest-projects/pcf.git $HOME/git/pentest-tools/pcf
+git_update https://github.com/Nightbringer21/fridump.git $HOME/git/pentest-tools/fridump
+git_update https://github.com/caddyserver/caddy.git $HOME/git/pentest-tools/caddy
+git_update https://github.com/mzet-/linux-exploit-suggester.git $HOME/git/pentest-tools/linux-exploit-suggester
+
+# Arjun
+git_update https://github.com/s0md3v/Arjun.git $HOME/git/pentest-tools/Arjun
+docker build . -t arjun
+
 # RAUDI
-git clone https://github.com/cybersecsi/RAUDI $HOME/git/pentest-tools/RAUDI
-cd $HOME/git/pentest-tools/RAUDI
+git_update https://github.com/cybersecsi/RAUDI $HOME/git/pentest-tools/RAUDI
 python -m venv .
 source bin/activate
 pip install -r requirements.txt
@@ -475,261 +295,87 @@ python3 ./raudi.py --all
 
 # frida
 mkdir -p $HOME/venv/pentest-tools/frida
-cd $HOME/venv/pentest-tools/frida
 python -m venv .
 source bin/activate
 pip install frida
 pip install frida-tools
 
-# fridump
-git clone https://github.com/Nightbringer21/fridump.git $HOME/git/pentest-tools/fridump
-cd $HOME/git/pentest-tools/fridump
-
-# arjun
-cd $HOME/git/nixos-bootstrap/resources/docker/arjun
-docker build . -t arjun
-
-# pcf
-git clone https://gitlab.com/invuls/pentest-projects/pcf.git $HOME/git/pentest-tools/pcf
-cd $HOME/git/pentest-tools/pcf
-# docker-compose up
-
 # cloudsploit
-git clone https://github.com/aquasecurity/cloudsploit.git $HOME/git/pentest-tools/cloudsploit
-cd $HOME/git/pentest-tools/cloudsploit
+git_update https://github.com/aquasecurity/cloudsploit.git $HOME/git/pentest-tools/cloudsploit
 docker build . -t cloudsploit:0.0.1
 
 # S3Scanner
-git clone https://github.com/sa7mon/S3Scanner.git $HOME/git/pentest-tools/S3Scanner
-cd $HOME/git/pentest-tools/S3Scanner
+git_update https://github.com/sa7mon/S3Scanner.git $HOME/git/pentest-tools/S3Scanner
 docker build . -t s3scanner:latest
 
 # aws-security-viz
-git clone https://github.com/anaynayak/aws-security-viz.git $HOME/git/pentest-tools/aws-security-viz
-cd $HOME/git/pentest-tools/aws-security-viz
+git_update https://github.com/anaynayak/aws-security-viz.git $HOME/git/pentest-tools/aws-security-viz
 docker build -t sec-viz .
 
 # CloudMapper
-git clone https://github.com/duo-labs/cloudmapper.git $HOME/git/pentest-tools/cloudmapper
-cd $HOME/git/pentest-tools/cloudmapper
+git_update https://github.com/duo-labs/cloudmapper.git $HOME/git/pentest-tools/cloudmapper
 docker build -t cloudmapper .
 
 # EyeWitness
-git clone https://github.com/FortyNorthSecurity/EyeWitness.git $HOME/git/pentest-tools/EyeWitness
-cd $HOME/git/pentest-tools/EyeWitness
-git pull
+git_update https://github.com/FortyNorthSecurity/EyeWitness.git $HOME/git/pentest-tools/EyeWitness
 docker build --build-arg user=$USER --tag eyewitness --file ./Python/Dockerfile .
 
-# crawlab
-git clone https://github.com/crawlab-team/crawlab.git $HOME/git/pentest-tools/crawlab
-cd $HOME/git/pentest-tools/crawlab
-git pull
-
-# feroxbuster
-git clone https://github.com/epi052/feroxbuster.git $HOME/git/pentest-tools/feroxbuster
-cd $HOME/git/pentest-tools/feroxbuster
-git pull
-
-# Astra
-git clone https://github.com/flipkart-incubator/Astra.git $HOME/git/pentest-tools/Astra
-cd $HOME/git/pentest-tools/Astra
-git pull
-
-# pwndoc
-git clone https://github.com/pwndoc/pwndoc.git $HOME/git/pentest-tools/pwndoc
-cd $HOME/git/pentest-tools/pwndoc
-git pull
-
-# pentest-tools
-git clone https://github.com/gwen001/pentest-tools.git $HOME/git/pentest-tools/gwen001-pentest-tools
-cd $HOME/git/pentest-tools/gwen001-pentest-tools
-git pull
-
-# awesome-stacks
-git clone https://github.com/ethibox/awesome-stacks.git $HOME/git/pentest-tools/awesome-stacks
-cd $HOME/git/pentest-tools/awesome-stacks
-git pull
-
-# Portainer
-git clone https://github.com/portainer/portainer $HOME/git/pentest-tools/portainer
-cd $HOME/git/pentest-tools/portainer
-git pull
-
-# Hack-Tools
-git clone https://github.com/LasCC/Hack-Tools.git $HOME/git/pentest-tools/Hack-Tools
-cd $HOME/git/pentest-tools/Hack-Tools
-git pull
-
 # spiderfoot
-git clone https://github.com/smicallef/spiderfoot.git $HOME/git/pentest-tools/spiderfoot
-cd $HOME/git/pentest-tools/spiderfoot
-git pull
+git_update https://github.com/smicallef/spiderfoot.git $HOME/git/pentest-tools/spiderfoot
 docker build . -t spiderfoot
 
-# rengine
-git clone https://github.com/yogeshojha/rengine.git $HOME/git/pentest-tools/rengine
-cd $HOME/git/pentest-tools/rengine
-git pull
-
-# commix
-git clone https://github.com/commixproject/commix.git $HOME/git/pentest-tools/commix
-cd $HOME/git/pentest-tools/commix
-git pull
-
-# social-analyzer
-git clone https://github.com/qeeqbox/social-analyzer.git $HOME/git/pentest-tools/social-analyzer
-cd $HOME/git/pentest-tools/social-analyzer
-git pull
-
-# zaproxy
-git clone https://github.com/zaproxy/zaproxy.git $HOME/git/pentest-tools/zaproxy
-cd $HOME/git/pentest-tools/zaproxy
-git pull
-
 # routersploit
-git clone https://www.github.com/threat9/routersploit $HOME/git/pentest-tools/routersploit
-cd $HOME/git/pentest-tools/routersploit
-git pull
+git_update https://www.github.com/threat9/routersploit $HOME/git/pentest-tools/routersploit
 docker build -t routersploit .
 
-# caddy
-git clone https://github.com/caddyserver/caddy.git $HOME/git/pentest-tools/caddy
-cd $HOME/git/pentest-tools/caddy
-git pull
-
 # scanless
-git clone https://github.com/vesche/scanless.git $HOME/git/pentest-tools/scanless
-cd $HOME/git/pentest-tools/scanless
-git pull
+git_update https://github.com/vesche/scanless.git $HOME/git/pentest-tools/scanless
 docker build -t scanless .
 
-# linux-exploit-suggester
-git clone https://github.com/mzet-/linux-exploit-suggester.git $HOME/git/pentest-tools/linux-exploit-suggester
-cd $HOME/git/pentest-tools/linux-exploit-suggester
-git pull
-
-# PEASS-ng
-git clone https://github.com/carlospolop/PEASS-ng.git $HOME/git/pentest-tools/PEASS-ng
-cd $HOME/git/pentest-tools/PEASS-ng
-git pull
-
-# github-dorks
-git clone https://github.com/techgaun/github-dorks.git $HOME/git/pentest-tools/github-dorks
-cd $HOME/git/pentest-tools/github-dorks
-git pull
-
 # joomscan
-git clone https://github.com/OWASP/joomscan.git $HOME/git/pentest-tools/joomscan
-cd $HOME/git/pentest-tools/joomscan
-git pull
+git_update https://github.com/OWASP/joomscan.git $HOME/git/pentest-tools/joomscan
 docker build -t rezasp/joomscan .
 
 # nikto
-git clone https://github.com/sullo/nikto.git $HOME/git/pentest-tools/nikto
-cd $HOME/git/pentest-tools/nikto
-git pull
+git_update https://github.com/sullo/nikto.git $HOME/git/pentest-tools/nikto
 docker build -t "sullo/nikto" .
 
 # impacket
-git clone https://github.com/SecureAuthCorp/impacket.git $HOME/git/pentest-tools/impacket
-cd $HOME/git/pentest-tools/impacket
-git pull
+git_update https://github.com/SecureAuthCorp/impacket.git $HOME/git/pentest-tools/impacket
 docker build -t "impacket:latest" .
 
-# hacktricks
-git clone https://github.com/carlospolop/hacktricks.git $HOME/git/pentest-tools/hacktricks
-cd $HOME/git/pentest-tools/hacktricks
-git pull
-
 # droopescan
-git clone https://github.com/droope/droopescan.git $HOME/git/pentest-tools/droopescan
-cd $HOME/git/pentest-tools/droopescan
-git pull
+git_update https://github.com/droope/droopescan.git $HOME/git/pentest-tools/droopescan
 docker build -t droope/droopescan .
 
 # vulnx
-git clone https://github.com/anouarbensaad/VulnX.git $HOME/git/pentest-tools/VulnX
-cd $HOME/git/pentest-tools/VulnX
-git pull
+git_update https://github.com/anouarbensaad/VulnX.git $HOME/git/pentest-tools/VulnX
 docker build -t vulnx ./docker/
 
-# Arjun
-git clone https://github.com/s0md3v/Arjun.git $HOME/git/pentest-tools/Arjun
-cd $HOME/git/pentest-tools/Arjun
-git pull
-
-# Parameth
-git clone https://github.com/maK-/parameth.git $HOME/git/pentest-tools/parameth
-cd $HOME/git/pentest-tools/parameth
-git pull
-
-# x8
-git clone https://github.com/Sh1Yo/x8 $HOME/git/pentest-tools/x8
-cd $HOME/git/pentest-tools/x8
-git pull
-
-# automated-pentest
-git clone https://github.com/vishnudxb/automated-pentest.git $HOME/git/pentest-tools/automated-pentest
-cd $HOME/git/pentest-tools/automated-pentest
-git pull
-
 # wapiti
-git clone https://github.com/wapiti-scanner/wapiti.git $HOME/git/pentest-tools/wapiti
-cd $HOME/git/pentest-tools/wapiti
-docker build . -t wapiti
-git pull
+git_update https://github.com/wapiti-scanner/wapiti.git $HOME/git/pentest-tools/wapiti
+#docker build . -t wapiti
 
-# w3af
-git clone --depth 1 https://github.com/andresriancho/w3af.git $HOME/git/pentest-tools/w3af
-cd $HOME/git/pentest-tools/w3af
-git pull
-
-###
 ###
 ### Misc tools
 ###
-###
-# nocodb
-git clone https://github.com/nocodb/nocodb.git $HOME/git/misc/nocodb
-cd $HOME/git/misc/nocodb
-git pull
+git_update https://github.com/nocodb/nocodb.git $HOME/git/misc/nocodb
+git_update https://github.com/ethibox/awesome-stacks.git $HOME/git/misc/awesome-stacks
 
-# awesome-stacks
-git clone https://github.com/ethibox/awesome-stacks.git $HOME/git/misc/awesome-stacks
-cd $HOME/git/misc/awesome-stacks
-git pull
-
-###
 ###
 ### Exploits
 ###
-###
-git clone https://github.com/berdav/CVE-2021-4034 $HOME/git/misc/CVE-2021-4034
-cd $HOME/git/misc/CVE-2021-4034
-git pull
+git_update https://github.com/berdav/CVE-2021-4034 $HOME/git/misc/CVE-2021-4034
+git_update https://github.com/trickest/cve.git $HOME/git/misc/cve
 
-###
 ###
 ### Wordlists
 ###
-###
-git clone https://github.com/random-robbie/bruteforce-lists.git $HOME/git/wordlists/bruteforce-lists
-cd $HOME/git/wordlists/bruteforce-lists
-git pull
-
-git clone https://github.com/google/fuzzing.git $HOME/git/wordlists/fuzzing
-cd $HOME/git/wordlists/fuzzing
-git pull
-
+git_update https://github.com/random-robbie/bruteforce-lists.git $HOME/git/wordlists/bruteforce-lists
+git_update https://github.com/google/fuzzing.git $HOME/git/wordlists/fuzzing
+git_update https://github.com/six2dez/OneListForAll.git $HOME/git/wordlists/OneListForAll
+git_update https://github.com/v0re/dirb.git $HOME/git/wordlists/dirb
 wget https://gist.github.com/jhaddix/b80ea67d85c13206125806f0828f4d10/raw/c81a34fe84731430741e0463eb6076129c20c4c0/content_discovery_all.txt -o $HOME/git/wordlists/content_discovery_all.txt
-
-git clone https://github.com/six2dez/OneListForAll.git $HOME/git/wordlists/OneListForAll
-cd $HOME/git/wordlists/OneListForAll
-git pull
-
-git clone https://github.com/v0re/dirb.git $HOME/git/wordlists/dirb
-cd $HOME/git/wordlists/dirb
-git pull
 
 # ISOs / VMs
 #mkdir $HOME/VMs
