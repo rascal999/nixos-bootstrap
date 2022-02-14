@@ -75,7 +75,6 @@ docker pull mikesplain/openvas                          # OpenVAS is a full-feat
 docker pull mpepping/cyberchef                          # The Cyber Swiss Army Knife
 docker pull phocean/beef                                # BeEF framework for XSS browser exploitation
 docker pull byt3bl33d3r/crackmapexec                    # A swiss army knife for pentesting networks
-docker pull xerosecurity/sn1per                         # Discover the attack surface and prioritize risks
 docker pull rossja/ncc-scoutsuite                       # Multi-Cloud Security Auditing Tool
 docker pull dstotijn/hetty                              # Hetty is an HTTP toolkit for security research
 docker pull stefanscherer/winrm                         # The ultimate WinRM shell for hacking/pentesting
@@ -103,6 +102,7 @@ docker pull projectdiscovery/nuclei                     # Configurable targeted 
 docker pull kizzx2/wireguard-socks-proxy                # Expose a WireGuard tunnel as a SOCKS5 proxy
 docker pull dperson/torproxy                            # Tor and Privoxy docker container
 docker pull cmnatic/rustscan                            # The Modern Port Scanner
+#docker pull xerosecurity/sn1per                         # Discover the attack surface and prioritize risks
 
 ###
 ### https://github.com/cybersecsi/RAUDI
@@ -113,7 +113,6 @@ docker pull secsi/dirb
 docker pull secsi/dirhunt        
 docker pull secsi/dirsearch      
 docker pull secsi/dnscan         
-#docker pull secsi/eyewitness     
 docker pull secsi/ffuf           
 docker pull secsi/fierce         
 docker pull secsi/findsploit     
@@ -126,7 +125,6 @@ docker pull secsi/knockpy
 docker pull secsi/lfisuite       
 docker pull secsi/masscan        
 docker pull secsi/massdns        
-#docker pull secsi/nikto          
 docker pull secsi/nmap           
 docker pull secsi/puredns        
 docker pull secsi/race-the-web   
@@ -138,6 +136,8 @@ docker pull secsi/sublist3r
 docker pull secsi/theharvester   
 docker pull secsi/waybackpy      
 docker pull secsi/whatweb
+#docker pull secsi/eyewitness     
+#docker pull secsi/nikto          
 
 # hetty fs
 mkdir $HOME/.hetty
@@ -275,12 +275,12 @@ git_update https://github.com/techgaun/github-dorks.git $HOME/git/pentest-tools/
 git_update https://github.com/maK-/parameth.git $HOME/git/pentest-tools/parameth
 git_update https://github.com/Sh1Yo/x8 $HOME/git/pentest-tools/x8
 git_update https://github.com/vishnudxb/automated-pentest.git $HOME/git/pentest-tools/automated-pentest
-#git_update --depth 1 https://github.com/andresriancho/w3af.git $HOME/git/pentest-tools/w3af
 git_update https://github.com/carlospolop/hacktricks.git $HOME/git/pentest-tools/hacktricks
 git_update https://gitlab.com/invuls/pentest-projects/pcf.git $HOME/git/pentest-tools/pcf
 git_update https://github.com/Nightbringer21/fridump.git $HOME/git/pentest-tools/fridump
 git_update https://github.com/caddyserver/caddy.git $HOME/git/pentest-tools/caddy
 git_update https://github.com/mzet-/linux-exploit-suggester.git $HOME/git/pentest-tools/linux-exploit-suggester
+#git_update --depth 1 https://github.com/andresriancho/w3af.git $HOME/git/pentest-tools/w3af
 
 # Arjun
 git_update https://github.com/s0md3v/Arjun.git $HOME/git/pentest-tools/Arjun
