@@ -102,6 +102,7 @@ docker pull projectdiscovery/nuclei                     # Configurable targeted 
 docker pull kizzx2/wireguard-socks-proxy                # Expose a WireGuard tunnel as a SOCKS5 proxy
 docker pull dperson/torproxy                            # Tor and Privoxy docker container
 docker pull cmnatic/rustscan                            # The Modern Port Scanner
+docker pull vuls/vuls                                   # Vulnerability scanner for Linux/FreeBSD
 #docker pull xerosecurity/sn1per                         # Discover the attack surface and prioritize risks
 
 ###
