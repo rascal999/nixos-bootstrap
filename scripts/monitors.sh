@@ -24,3 +24,8 @@ if [[ `hostname` == "nixos-rig" ]]; then
     /run/current-system/sw/bin/firefox -P "Default User" &
     /run/current-system/sw/bin/slack &
 fi
+
+if [[ `hostname` == "nixos-galaxy" ]]; then
+    sleep 3
+    /run/current-system/sw/bin/xrandr --output HDMI-1 --auto --right-of eDP-1
+fi
