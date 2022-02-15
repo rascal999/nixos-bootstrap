@@ -257,7 +257,7 @@ git_update https://github.com/trimstray/the-book-of-secret-knowledge.git $HOME/g
 git_update https://github.com/Hack-with-Github/Awesome-Hacking.git $HOME/git/pentest-education/Awesome-Hacking
 
 ###
-### TOOLS
+### Tools
 ###
 git_update https://github.com/crawlab-team/crawlab.git $HOME/git/pentest-tools/crawlab
 git_update https://github.com/epi052/feroxbuster.git $HOME/git/pentest-tools/feroxbuster
@@ -282,6 +282,10 @@ git_update https://github.com/Nightbringer21/fridump.git $HOME/git/pentest-tools
 git_update https://github.com/caddyserver/caddy.git $HOME/git/pentest-tools/caddy
 git_update https://github.com/mzet-/linux-exploit-suggester.git $HOME/git/pentest-tools/linux-exploit-suggester
 #git_update --depth 1 https://github.com/andresriancho/w3af.git $HOME/git/pentest-tools/w3af
+
+# angularjs-csti-scanner
+git_update https://github.com/tijme/angularjs-csti-scanner.git $HOME/git/pentest-tools/angularjs-csti-scanner.git
+docker build . -t angularjs-csti-scanner
 
 # Arjun
 git_update https://github.com/s0md3v/Arjun.git $HOME/git/pentest-tools/Arjun
