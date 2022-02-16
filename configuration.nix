@@ -127,6 +127,7 @@
      htop
      i3
      i3status-rust
+     imagemagick
      inetutils
      inkscape
      ipcalc
