@@ -128,6 +128,7 @@
      i3
      i3status-rust
      inetutils
+     inkscape
      ipcalc
      iwd
      jdk
