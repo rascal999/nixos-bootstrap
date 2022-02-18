@@ -18,7 +18,7 @@ if [[ `hostname` == "nixos-rig" ]]; then
     i3-msg 'workspace 2; append_layout /home/user/.config/i3/nixos-rig-workspace-2.json'
     i3-msg 'workspace 7; append_layout /home/user/.config/i3/nixos-rig-workspace-7.json'
 
-    sleep 2
+    sleep 3 
 
     /run/current-system/sw/bin/obsidian &
     /run/current-system/sw/bin/firefox -P "Default User" &
@@ -26,6 +26,8 @@ if [[ `hostname` == "nixos-rig" ]]; then
 fi
 
 if [[ `hostname` == "nixos-galaxy" ]]; then
-    sleep 3
+    sleep 3 
+    /run/current-system/sw/bin/xrandr --output HDMI-1 --off
+    sleep 3 
     /run/current-system/sw/bin/xrandr --output HDMI-1 --auto --right-of eDP-1
 fi
