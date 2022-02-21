@@ -13,7 +13,7 @@ tmux kill-session -t fscan_left
 tmux new-session -d -s fscan_left
 tmux split-window -v -p 20 -t fscan_left:0.0
 tmux split-window -v -p 50 -t fscan_left:0.0
-tmux send-keys -t fscan_right:0.0 "d-nmap -sU -T5 $IP" Enter
+tmux send-keys -t fscan_left:0.0 "d-nmap -sU -T5 $IP" Enter
 tmux send-keys -t fscan_left:0.1 "d-dirb $URL" Enter
 tmux send-keys -t fscan_left:0.2 "d-whatweb $URL" Enter
 tmux attach-session -t fscan_left
