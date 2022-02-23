@@ -289,8 +289,9 @@
   services.blueman.enable = true;
   ## Timesync
   services.timesyncd.enable = true;
+  # k3s and other services
+  networking.firewall.allowedTCPPorts = [ 22, 80, 443, 8080, 8081, 6443 ];
   # k3s
-  #networking.firewall.allowedTCPPorts = [ 6443 ];
   services.k3s.enable = false;
   services.k3s.role = "server";
   ## Ignore lid on laptops
