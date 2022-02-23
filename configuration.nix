@@ -177,6 +177,7 @@
      protonmail-bridge
      pwgen
      python310
+     qemu
      radare2
      rdesktop
      remmina
