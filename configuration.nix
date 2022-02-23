@@ -101,6 +101,7 @@
      fcrackzip
      feh
      ffmpeg
+     file
      filezilla
      firecracker
      firectl
@@ -178,6 +179,7 @@
      pwgen
      python310
      qemu
+     qemu-utils
      radare2
      rdesktop
      remmina
