@@ -76,6 +76,7 @@
      android-tools
      appimage-run
      asciinema
+     atom
      awscli
      brightnessctl
      brillo
