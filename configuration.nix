@@ -183,6 +183,7 @@
      qemu-utils
      radare2
      rdesktop
+     redshift
      remmina
      rsync
      ruby
