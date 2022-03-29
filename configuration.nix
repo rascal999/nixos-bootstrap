@@ -80,6 +80,7 @@
      awscli
      brightnessctl
      brillo
+     btop
      burpsuite
      calibre
      chromium
