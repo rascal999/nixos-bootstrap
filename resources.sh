@@ -213,8 +213,9 @@ git_update https://github.com/DopplerHQ/awesome-interview-questions.git $HOME/gi
 ###
 ### Pentest Education
 ###
-git_update https://github.com/toniblyx/my-arsenal-of-aws-security-tools.git $HOME/git/education/my-arsenal-of-aws-security-tools
-git_update https://github.com/jassics/awesome-aws-security.git $HOME/git/education/awesome-aws-security
+git_update https://github.com/HalbornSecurity/PublicReports.git $HOME/git/pentest-education/HalbornPublicReports
+git_update https://github.com/toniblyx/my-arsenal-of-aws-security-tools.git $HOME/git/pentest-education/my-arsenal-of-aws-security-tools
+git_update https://github.com/jassics/awesome-aws-security.git $HOME/git/pentest-education/awesome-aws-security
 git_update https://github.com/mytechnotalent/Reverse-Engineering.git $HOME/git/pentest-education/Reverse-Engineering
 git_update https://github.com/sundowndev/hacker-roadmap.git $HOME/git/pentest-education/hacker-roadmap
 git_update https://github.com/OWASP/owasp-mstg.git $HOME/git/pentest-education/owasp-mstg
