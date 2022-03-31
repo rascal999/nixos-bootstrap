@@ -85,6 +85,7 @@
      calibre
      chromium
      cifs-utils
+     clamav
      connman
      connman-gtk
      coreutils
