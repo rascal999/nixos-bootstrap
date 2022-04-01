@@ -328,8 +328,8 @@
   # opensnitch
   services.opensnitch.enable = false;
   # nvidia
-  #services.xserver.videoDrivers = lib.mkIf (config.networking.hostName == "nixos-rig") [ "nvidiaBeta" ];
-  hardware.nvidia.package = lib.mkIf (config.networking.hostName == "nixos-rig") config.boot.kernelPackages.nvidiaPackages.beta;
+  services.xserver.videoDrivers = lib.mkIf (config.networking.hostName == "nixos-rig") [ "nvidia" ];
+  #hardware.nvidia.package = lib.mkIf (config.networking.hostName == "nixos-rig") config.boot.kernelPackages.nvidiaPackages.beta;
   # X11 / i3
   services.xserver.windowManager.i3.enable = true;
   services.xserver.enable = true;
