@@ -259,8 +259,9 @@ git_update https://github.com/Hack-with-Github/Awesome-Hacking.git $HOME/git/pen
 git_update https://github.com/juliocesarfort/public-pentesting-reports.git $HOME/git/pentest-education/public-pentesting-reports
 
 ###
-### Tools
+### Pentest Tools
 ###
+git_update https://github.com/epinna/tplmap.git $HOME/git/pentest-tools/tplmap
 git_update https://github.com/crawlab-team/crawlab.git $HOME/git/pentest-tools/crawlab
 git_update https://github.com/epi052/feroxbuster.git $HOME/git/pentest-tools/feroxbuster
 git_update https://github.com/flipkart-incubator/Astra.git $HOME/git/pentest-tools/Astra
