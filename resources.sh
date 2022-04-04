@@ -213,6 +213,7 @@ git_update https://github.com/DopplerHQ/awesome-interview-questions.git $HOME/gi
 ###
 ### Pentest Education
 ###
+git_update https://github.com/Lissy93/personal-security-checklist.git $HOME/git/pentest-education/personal-security-checklist
 git_update https://github.com/HalbornSecurity/PublicReports.git $HOME/git/pentest-education/HalbornPublicReports
 git_update https://github.com/toniblyx/my-arsenal-of-aws-security-tools.git $HOME/git/pentest-education/my-arsenal-of-aws-security-tools
 git_update https://github.com/jassics/awesome-aws-security.git $HOME/git/pentest-education/awesome-aws-security
