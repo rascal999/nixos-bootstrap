@@ -79,6 +79,7 @@
      asciinema
      atom
      awscli
+     azure-cli
      brightnessctl
      brillo
      btop
