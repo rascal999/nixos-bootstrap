@@ -144,6 +144,7 @@
      jython
      k3s
      keepassxc
+     kompose
      kubectl
      kubernetes-helm
      libreoffice-fresh
