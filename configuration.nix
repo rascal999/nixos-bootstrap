@@ -11,8 +11,7 @@
       ./hostname.nix
     ];
 
-  boot.kernelPackages = lib.mkIf (config.networking.hostName == "nixos-rig") pkgs.linuxPackages;
-  boot.kernelPackages = lib.mkIf (config.networking.hostName == "nixos-galaxy") pkgs.linuxPackages_latest;
+  boot.kernelPackages = lib.mkIf (config.networking.hostName == "nixos-rig") pkgs.linuxPackages else pkgs.linuxPackages_latest;
   boot.kernelParams = [ "intel_pstate=active" ];
   # Use the GRUB 2 boot loader.
   boot.loader.grub.enable = true;
