@@ -202,7 +202,7 @@
      sshfs
      #steam
      stockfish
-     sway
+     #sway
      syncthing
      testssl
      thc-hydra
@@ -260,7 +260,7 @@
   # Steam
   #programs.steam.enable = true;
   # Sway
-  programs.sway.enable = true;
+  #programs.sway.enable = true;
 
   # List services that you want to enable:
   # Enable zsh
