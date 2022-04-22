@@ -232,7 +232,7 @@
      x11docker
      x11vnc
      xlockmore
-     xmind
+     #xmind
      xorg.xbacklight
      xorg.xeyes
      xorg.xmodmap
