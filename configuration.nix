@@ -146,6 +146,7 @@
      kompose
      kubectl
      kubernetes-helm
+     kustomize
      libreoffice-fresh
      libsecret
      lshw
