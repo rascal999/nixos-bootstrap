@@ -216,6 +216,7 @@
      twmn
      unrar
      unzip
+     velero
      vim
      vlc
      vue
