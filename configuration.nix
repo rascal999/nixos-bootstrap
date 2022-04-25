@@ -122,6 +122,7 @@
      glances
      gnome.gnome-keyring
      gnupg
+     go
      gobuster
      googler
      grc
