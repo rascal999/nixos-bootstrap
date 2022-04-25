@@ -172,6 +172,7 @@
      opensnitch-ui
      openssh
      openssl
+     openttd
      openvpn
      p7zip
      pandoc
