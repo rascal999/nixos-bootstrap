@@ -373,6 +373,7 @@ git_update https://github.com/nocodb/nocodb.git $HOME/git/misc/nocodb
 git_update https://github.com/ethibox/awesome-stacks.git $HOME/git/misc/awesome-stacks
 git_update https://github.com/rvaiya/warpd.git $HOME/git/misc/warpd
 git_update https://github.com/overleaf/overleaf.git $HOME/git/misc/overleaf
+git_update https://github.com/TeamPiped/Piped-Docker $HOME/git/misc/Piped-Docker
 
 ###
 ### Exploits
