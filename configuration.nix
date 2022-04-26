@@ -139,6 +139,7 @@
      ipcalc
      iwd
      jdk
+     jd-gui
      john
      jq
      jython
