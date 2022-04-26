@@ -93,6 +93,7 @@
      cutter
      cups-brother-hl3140cw
      dbeaver
+     dex2jar
      dhcpcd
      dig
      dmenu
