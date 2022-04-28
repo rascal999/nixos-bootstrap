@@ -209,6 +209,7 @@
      stockfish
      #sway
      syncthing
+     terraform
      testssl
      thc-hydra
      thefuck
