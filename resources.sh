@@ -197,6 +197,7 @@ wget -c https://d0.awsstatic.com/whitepapers/aws-kms-best-practices.pdf \
 ### GitHub
 ###
 git_update https://github.com/Azure/terraform.git $HOME/git/education/terraform
+git_update https://github.com/hashicorp/learn-terraform-provision-aks-cluster.git $HOME/git/education/learn-terraform-provision-aks-cluster
 git_update https://github.com/open-guides/og-aws.git $HOME/git/education/og-aws
 git_update https://github.com/OpenZeppelin/awesome-openzeppelin $HOME/git/education/awesome-openzeppelin
 git_update https://github.com/smartcontractkit/full-blockchain-solidity-course-py $HOME/git/education/full-blockchain-solidity-course-py
