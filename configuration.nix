@@ -318,7 +318,7 @@
   services.syncthing.dataDir = "/home/user/syncthing";
   services.syncthing.configDir = "/home/user/.config/syncthing";
   ## Mailspring
-  services.gnome.gnome-keyring.enable = true;
+  #services.gnome.gnome-keyring.enable = true;
   ## For Obsidian
   nixpkgs.config.allowUnfree = true;
   nixpkgs.config.permittedInsecurePackages = [
