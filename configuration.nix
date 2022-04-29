@@ -11,7 +11,7 @@
       ./hostname.nix
     ];
 
-  boot.kernelPackages = if (config.networking.hostName == "nixos-rig") then pkgs.linuxPackages else pkgs.linuxPackages_latest;
+  boot.kernelPackages = if (config.networking.hostName == "nixos-rig" || config.networking.hostName == "nixos-rog") then pkgs.linuxPackages else pkgs.linuxPackages_latest;
   boot.kernelParams = [ "intel_pstate=active" ];
   # Use the GRUB 2 boot loader.
   boot.loader.grub.enable = true;
@@ -328,8 +328,8 @@
   virtualisation.docker.enable = true;
   virtualisation.docker.enableOnBoot = true;
   virtualisation.docker.liveRestore = false;
-  virtualisation.docker.enableNvidia = lib.mkIf (config.networking.hostName == "nixos-rig") true;
-  hardware.opengl.driSupport32Bit = lib.mkIf (config.networking.hostName == "nixos-rig") true;
+  virtualisation.docker.enableNvidia = lib.mkIf (config.networking.hostName == "nixos-rig" || config.networking.hostName == "nixos-rog") true;
+  hardware.opengl.driSupport32Bit = lib.mkIf (config.networking.hostName == "nixos-rig" || config.networking.hostName == "nixos-rog") true;
   systemd.enableUnifiedCgroupHierarchy = false;
   ## VirtualBox
   virtualisation.virtualbox.host.enable = true;
@@ -337,8 +337,8 @@
   # opensnitch
   services.opensnitch.enable = false;
   # nvidia
-  services.xserver.videoDrivers = lib.mkIf (config.networking.hostName == "nixos-rig") [ "nvidia" ];
-  #hardware.nvidia.package = lib.mkIf (config.networking.hostName == "nixos-rig") config.boot.kernelPackages.nvidiaPackages.beta;
+  services.xserver.videoDrivers = lib.mkIf (config.networking.hostName == "nixos-rig" || config.networking.hostName == "nixos-rog") [ "nvidia" ];
+  #hardware.nvidia.package = lib.mkIf (config.networking.hostName == "nixos-rig" || config.networking.hostName == "nixos-rog") config.boot.kernelPackages.nvidiaPackages.beta;
   # X11 / i3
   services.xserver.windowManager.i3.enable = true;
   services.xserver.enable = true;
