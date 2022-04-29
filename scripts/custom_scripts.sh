@@ -2,6 +2,8 @@
 
 # For each script in ~/custom_scripts
 for f in ~/custom_scripts/*.sh; do
-  echo Running $f ..
-  $f
+  if [[ -f $f ]]; then
+    echo Running $f ..
+    $f
+  fi
 done
