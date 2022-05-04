@@ -13,6 +13,7 @@
 
   boot.kernelPackages = if (config.networking.hostName == "nixos-rig" || config.networking.hostName == "nixos-rog") then pkgs.linuxPackages else pkgs.linuxPackages_latest;
   boot.kernelParams = [ "intel_pstate=active" ];
+  boot.initrd.kernelModules = if (config.networking.hostName == "nixos-rog") [ "amdgpu" ];
   # Use the GRUB 2 boot loader.
   boot.loader.grub.enable = true;
   boot.loader.grub.version = 2;
