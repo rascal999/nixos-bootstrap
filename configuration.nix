@@ -342,6 +342,7 @@
   hardware.nvidia.prime = lib.mkIf (config.networking.hostName == "nixos-rog") {
     sync.enable = true;
     nvidiaBusId = "PCI:1:0:0";
+    amdgpuBusId = "PCI:4:0:0";
   };
   #hardware.nvidia.package = lib.mkIf (config.networking.hostName == "nixos-rig" || config.networking.hostName == "nixos-rog") config.boot.kernelPackages.nvidiaPackages.beta;
   # X11 / i3
