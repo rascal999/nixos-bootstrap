@@ -294,6 +294,11 @@
   ###
   # Custom
   ###
+  # Flakes
+  nix.package = pkgs.nixUnstable;
+  nix.extraOptions = ''
+    experimental-features = nix-command flakes
+  '';
   # For WireGuard
   networking.firewall.checkReversePath = false;
   # Touchpad
