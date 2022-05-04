@@ -338,8 +338,7 @@
   # opensnitch
   services.opensnitch.enable = false;
   # nvidia
-  services.xserver.videoDrivers = if (config.networking.hostName == "nixos-rig") then { [ "nvidia" ] } else { ["amdgpu"] };
-  services.xserver.videoDrivers = lib.mkIf (config.networking.hostName == "nixos-rog") [ "amdgpu" ];
+  services.xserver.videoDrivers = lib.mkIf (config.networking.hostName == "nixos-rig") [ "nvidia" ];
   #hardware.nvidia.modesetting.enable = lib.mkIf (config.networking.hostName == "nixos-rog") true;
   #hardware.nvidia.prime = lib.mkIf (config.networking.hostName == "nixos-rog") {
   #  sync.enable = true;
