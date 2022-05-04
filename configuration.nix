@@ -328,8 +328,8 @@
   virtualisation.docker.enable = true;
   virtualisation.docker.enableOnBoot = true;
   virtualisation.docker.liveRestore = false;
-  virtualisation.docker.enableNvidia = lib.mkIf (config.networking.hostName == "nixos-rig" || config.networking.hostName == "nixos-rog") true;
-  hardware.opengl.driSupport32Bit = lib.mkIf (config.networking.hostName == "nixos-rig" || config.networking.hostName == "nixos-rog") true;
+  virtualisation.docker.enableNvidia = lib.mkIf (config.networking.hostName == "nixos-rig") true;
+  hardware.opengl.driSupport32Bit = lib.mkIf (config.networking.hostName == "nixos-rig") true;
   systemd.enableUnifiedCgroupHierarchy = false;
   ## VirtualBox
   virtualisation.virtualbox.host.enable = true;
@@ -337,9 +337,9 @@
   # opensnitch
   services.opensnitch.enable = false;
   # nvidia
-  services.xserver.videoDrivers = lib.mkIf (config.networking.hostName == "nixos-rig" || config.networking.hostName == "nixos-rog") [ "nvidia" ];
-  hardware.nvidia.modesetting.enable = lib.mkIf (config.networking.hostName == "nixos-rog") true;
-  hardware.bumblebee.enable = lib.mkIf (config.networking.hostName == "nixos-rog") true;
+  services.xserver.videoDrivers = lib.mkIf (config.networking.hostName == "nixos-rig") [ "nvidia" ];
+  services.xserver.videoDrivers = lib.mkIf (config.networking.hostName == "nixos-rog") [ "amdgpu" ];
+  #hardware.nvidia.modesetting.enable = lib.mkIf (config.networking.hostName == "nixos-rog") true;
   #hardware.nvidia.prime = lib.mkIf (config.networking.hostName == "nixos-rog") {
   #  sync.enable = true;
   #  nvidiaBusId = "PCI:1:0:0";
