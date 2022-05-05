@@ -1,6 +1,6 @@
 # I'll annotate above each line that needs changing how to make this work in a configuration.nix for nixos
-#{config, pkgs, nixpkgs,...}:
-{ nixpkgs ? import <nixpkgs> {} }:
+{config, pkgs}:
+#{ nixpkgs ? import <nixpkgs> {} }:
 
 let
   myVim = nixpkgs.vim_configurable.customize {
