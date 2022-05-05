@@ -224,6 +224,7 @@
      unzip
      velero
      vim
+     vimPlugins.vim-nix
      vlc
      vue
      w3m
