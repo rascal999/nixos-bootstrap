@@ -259,7 +259,7 @@
   ];
 
   # vim-plugins
-  vim_configurable.customize {
+  vim-configured = vim_configurable.customize {
     vimrcConfig.packages.myVimPackage = with pkgs.vimPlugins; {
       # loaded on launch
       plug.plugins = [ vim-nix ];
