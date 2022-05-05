@@ -224,7 +224,6 @@
      unzip
      velero
      vim
-     vimPlugins.vim-nix
      vlc
      vue
      w3m
@@ -263,7 +262,7 @@
   vim_configurable.customize {
     vimrcConfig.packages.myVimPackage = with pkgs.vimPlugins; {
       # loaded on launch
-      plug.plugins = [ youcompleteme fugitive phpCompletion elm-vim ];
+      plug.plugins = [ vim-nix ];
     };
   }
 
