@@ -9,7 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./hostname.nix
-      ./pkgs/vim.nix
+      #./pkgs/vim.nix
     ];
 
   boot.kernelPackages = if (config.networking.hostName == "nixos-rig" || config.networking.hostName == "nixos-rog") then pkgs.linuxPackages else pkgs.linuxPackages_latest;
@@ -132,6 +132,7 @@
      grim
      gsettings-desktop-schemas
      hexedit
+     home-manager
      hping
      htop
      i3
