@@ -18,6 +18,7 @@ mkdir $HOME/asciinema
 sudo mv /etc/nixos/configuration.nix /etc/nixos/configuration.nix.backup
 sudo cp $HOME/git/nixos-bootstrap/configuration.nix /etc/nixos/configuration.nix
 
+sudo rm -rf /etc/nixos/pkgs.backup
 sudo mv /etc/nixos/pkgs /etc/nixos/pkgs.backup
 sudo cp -rf $HOME/git/nixos-bootstrap/pkgs/ /etc/nixos/
 
