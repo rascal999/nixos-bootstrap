@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./hostname.nix
+      ./pkgs/vim.nix
     ];
 
   boot.kernelPackages = if (config.networking.hostName == "nixos-rig" || config.networking.hostName == "nixos-rog") then pkgs.linuxPackages else pkgs.linuxPackages_latest;
@@ -257,18 +258,6 @@
      zsh-syntax-highlighting
      zsh-z
   ];
-
-  # vim-plugins
-  vimrcConfig.packages.myVimPackage = with pkgs.vimPlugins; {
-    # loaded on launch
-    start = [ youcompleteme fugitive ];
-    # manually loadable by calling `:packadd $plugin-name`
-    # however, if a Vim plugin has a dependency that is not explicitly listed in
-    # opt that dependency will always be added to start to avoid confusion.
-    #opt = [ phpCompletion elm-vim ];
-    # To automatically load a plugin when opening a filetype, add vimrc lines like:
-    # autocmd FileType php :packadd phpCompletion
-  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
