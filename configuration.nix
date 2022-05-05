@@ -264,7 +264,7 @@
       # loaded on launch
       plug.plugins = [ vim-nix ];
     };
-  }
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
