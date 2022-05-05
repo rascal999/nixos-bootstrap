@@ -259,6 +259,14 @@
      zsh-z
   ];
 
+  # vim-plugins
+  vim_configurable.customize {
+    vimrcConfig.packages.myVimPackage = with pkgs.vimPlugins; {
+      # loaded on launch
+      plug.plugins = [ youcompleteme fugitive phpCompletion elm-vim ];
+    };
+  }
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   programs.mtr.enable = true;
