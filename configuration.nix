@@ -259,11 +259,15 @@
   ];
 
   # vim-plugins
-  vim-configured = vim_configurable.customize {
-    vimrcConfig.packages.myVimPackage = with pkgs.vimPlugins; {
-      # loaded on launch
-      plug.plugins = [ vim-nix ];
-    };
+  vimrcConfig.packages.myVimPackage = with pkgs.vimPlugins; {
+    # loaded on launch
+    start = [ youcompleteme fugitive ];
+    # manually loadable by calling `:packadd $plugin-name`
+    # however, if a Vim plugin has a dependency that is not explicitly listed in
+    # opt that dependency will always be added to start to avoid confusion.
+    opt = [ phpCompletion elm-vim ];
+    # To automatically load a plugin when opening a filetype, add vimrc lines like:
+    # autocmd FileType php :packadd phpCompletion
   };
 
   # Some programs need SUID wrappers, can be configured further or are
